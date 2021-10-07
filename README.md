@@ -1,108 +1,415 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Rapier Marketing Logo](assets/images/readme-imgs/rapier_marketing_logo.png)
 
-Welcome Kat632,
+# Project 2 - Play Your Cards Right, a javaScript game.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+** **
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+| ![Home page - index.html](assets/images/readme-imgs/responsive_rapier_home.JPG) |
+|:--:|
+| <b>Rapier Marketing Home page displayed on different devices.</b>|
+| <b>Created using Amiresponsive. Please see [Technologies Used](#technologies-used) for details.</b>|
 
-## Gitpod Reminders
+** **
+## **Table of Contents**
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+** **
 
-`python3 -m http.server`
+*   [Overview](#overview)
+*   [UX](#ux)
+*   [Design](#design)
+*   [Features](#features)
+*   [Testing](#testing)
+*   [Technologies Used](#technologies-used)
+*   [Deployment](#deployment)
+*   [Credits](#credits)
+*   [Acknowledgements](#acknowledgements)
+*   [Support](#support)
 
-A blue button should appear to click: _Make Public_,
+** **
 
-Another blue button should appear to click: _Open Browser_.
+## **Overview**
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+** **
+ 
+This is the second Project for the **Full Stack Web Development Diploma** from [Code Institute](https://codeinstitute.net).
 
-A blue button should appear to click: _Make Public_,
+**Background to the project and why I decided to build this particular game**
 
-Another blue button should appear to click: _Open Browser_.
+Imagine if you will, it's 1986-ish, and an 8 year old girl sitting bored in her bedroom.  She starts flicking through some random books that have been left next to the family computer, the Acorn Electron.  Her dad got all these books when he bought the Acorn second-hand off a mate of his.  No one ever looks at the books though.  They're just there gathering dust.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+The little girl opens up one of the books and discovers a whole world of computer manipulation inside.  She doesn't know what any of it means, but by looking at the pictures, she realised that the computer can do all sorts of interesting things that she'd not seen it do before.  So that's how I started coding.
 
-To log into the Heroku toolbelt CLI:
+This website is a real-life client project for Clive Pearson of Rapier Marketing Services.  Clive is a marketing consultant specialising in SMEs and micro businesses.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+This website has been built using the knowledge gained from the HTML, CSS and User Centric Design modules of Code Institute's FullStack Web Development course.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## [The live version of the website can be found here](https://kat632.github.io/MS1-Rapier-Marketing/).
 
-------
+** **
 
-## Release History
+| ![Rapier Marketing planning.html page displayed on different devices.](assets/images/readme-imgs/responsive_rapier_planning.JPG) |
+|:--:|
+| <b>Rapier Marketing planning.html page displayed on different devices.</b>|
+| <b>Created using Amiresponsive. Please see [Technologies Used](#technologies-used) for details.</b>|
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+| ![Rapier Marketing tactics.html page displayed on different devices.](assets/images/readme-imgs/responsive_rapier_tactics.JPG) |
+|:--:|
+| <b>Rapier Marketing tactics.html page displayed on different devices.</b>|
+| <b>Created using Amiresponsive. Please see [Technologies Used](#technologies-used) for details.</b>|
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+| ![Rapier Marketing contact.html page displayed on different devices.](assets/images/readme-imgs/responsive_rapier_contact.JPG) |
+|:--:|
+| <b>Rapier Marketing contact.html page displayed on different devices.</b>|
+| <b>Created using Amiresponsive. Please see [Technologies Used](#technologies-used) for details.</b>|
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+** **
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+[Return to Table of Contents](#table-of-contents)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+** **
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## **UX**
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+** **
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+**1. Strategy**
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+To ensure the UX is simple and user-friendly, by providing easy navigation through all pages on the site.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### **User stories**
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+**Visitor Goals**
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+*	As a website visitor, I want to easily understand the main purpose of the website and learn more about the organisation.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+*	As a website visitor, I want to be able to easily navigate through the site to find content.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+*	As a website visitor, I want to be able to view the website clearly on any mobile device.
 
-------
+*	As a website visitor, I want to know what services are provided by the organisation.
 
-## FAQ about the uptime script
+*	As a website visitor, I would like to see examples of previous projects undertaken by the organisation.
 
-**Why have you added this script?**
+**Client Goals**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+*	To have a more visually pleasing website than the current version [https://rapiergroup.co.uk/](https://rapiergroup.co.uk/).
 
-**How will this affect me?**
+*	To minimise the risk of information overload, by condensing the text into a more readable layout.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+* 	The website must represent the client and their business in a professional manner.  No visual gimmicks or massive menus.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+**2. Scope**
 
-**So….?**
+*	To create a fluid and responsive layout for ease of use on common devices.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+*	To fine-tune and implement the skills I have learnt so far on my course.
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+**3. Structure**
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+I designed this website to create a more modern and eye-catching version of the original website.  See above for link to original website.  The original website was built by Clive Pearson using a Wordpress template.  My version of the website utilises modern internet protocols to create a more aethetically pleasing experience for the user.
 
-**Anything more?**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+**4. Skeleton**
 
----
+*	Wireframes - please see below in the Design section.
 
-Happy coding!
+*	Fixed footer for the purpose of a strong and constantly present Call To Action.
+
+*	Home page, Planning page, Tactics page, Contact page.
+
+
+**5. Surface**
+
+Please see Design section below.
+
+** **
+
+[Return to Table of Contents](#table-of-contents)
+
+** **
+
+## **Design**
+
+** **
+
+
+### **Colour Scheme**
+
+
+
+
+### **Typography**
+
+The website uses two fonts throughout.  The headers throughout the website are using the **Cabin** font while the main text is using the **Raleway** font.  Both fonts are from [Google Fonts](https://fonts.google.com/).  The fonts were chosen for their simplicity and because I am aware that sans serif fonts are better for dyslexic readers.  My information about choosing an accessible font came from [this article at Bdadyslexia](https://www.bdadyslexia.org.uk/advice/employers/creating-a-dyslexia-friendly-workplace/dyslexia-friendly-style-guide).
+
+
+### **Imagery**
+
+
+
+
+### **Wireframes**
+
+
+
+
+### **Differences to Design**
+
+*   
+
+*   
+
+*   
+
+*   
+
+*   
+
+*	
+
+
+### **Limitations**
+
+
+
+** **
+
+[Return to Table of Contents](#table-of-contents)
+
+** **
+
+## **Features**
+
+** **
+
+
+*   
+
+**Responsive features**
+
+
+
+**Features Left to Implement**
+
+
+
+** **
+
+[Return to Table of Contents](#table-of-contents)
+
+** **
+
+## **Testing**
+
+** **
+
+
+## **Functionality Testing**
+
+I used Mozilla Web Developer Tools and Chrome Developer Tools throughout the project for testing and solving problems with responsiveness and style issues.
+
+## **Compatibility Testing**
+
+The site has been tested across multiple virtual devices and browsers using developer tools.  Browser testing on Safari, Edge, Firefox and Chrome.
+
+The site has been tested across multiple non-virtual devices, including iPhone 8 and iPad Mini 2.
+
+## **Performance testing**
+
+All pages pass through [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) with no major concerns, except for the empty values in the aria-required labels on the form fields.  These have been changed to aria-required="true".
+
+## **Accessibility Testing**
+
+Accessibility testing using [WebAim Wave - Web Acessibility Evaluation Tool](https://wave.webaim.org/)
+
+## **Code Validation**
+
+Testing has been carried out using the following web services:
+
+HTML on all pages validated using [The W3C Markup Validation Service](https://validator.w3.org/)
+CSS validated using [The W3C CSS Validation Service](http://jigsaw.w3.org/css-validator/)
+
+## **Code Validation Issues**
+
+When validating the tactics.html page, an issue was revealed in that you cannot have a h3 element as a descendant of a th element.  Therefore I had to remove the h3 element and I have restyled **th.Rtable-cell** to mimic a h3 element.
+
+## **Peer Code Review**
+
+At the suggestion of my mentor I submitted my code for Peer Code Review in the **Code Institute** Slack channel.  Please see the names of the reviewers below in [Acknowledgements](#acknowledgements).
+
+The results were:
+*	A bug on the 404 page whereby the Rapier Group text in the top left of the page does not link back to the home page - Fixed.
+*	A suggestion to left-align the text in the list container on planning.html, so that the bullets aren't floating separately to the text - Fixed and it looks so much better now.
+*	Consider adding more space below the table on tactics.html as it was slightly overlapped by the footer element - Fixed.
+
+## **User Testing**
+
+**Visitor Goals**
+
+> As a website visitor, I want to easily understand the main purpose of the website and learn more about the organisation.
+>
+>> The name of the business and what the company does is evident on the home page.  The different sections on the home page provide more opportunity to learn about the organisation.
+
+> As a website visitor, I want to be able to easily navigate through the site to find content.
+>
+>> Each page has a navigation bar at the top allowing the user to navigate between the pages.  Since the home page is longer than the others, a back-to-top button has been included to allow the user to quickly get back to the top of the page where the navigation bar is.
+
+> As a website visitor, I want to be able to view the website clearly on any mobile device.
+>
+>> The website is responsive at different screen widths.  For a description of the responsive features, please see [Features](#features).
+
+> As a website visitor, I want to know what services are provided by the organisation.
+>
+>> The Planning and Tactics pages provide information about the services provided by Rapier Marketing.
+
+> As a website visitor, I would like to see examples of previous projects undertaken by the organisation.
+>
+>> The Past Projects and Testimonials sections on the home page provide information about what the organisation has previously undertaken.
+
+
+** **
+
+[Return to Table of Contents](#table-of-contents)
+
+** **
+
+## **Technologies Used**
+
+** **
+
+
+*	HTML - This project uses HTML as the main language used to complete the structure of the website.
+
+*	CSS - This project uses custom written CSS to style the website.
+
+*	[Font Awesome](https://fontawesome.com/) - Font awesome Icons are used for the What We Do information boxes on the home page and the social media links contained in the Footer section of the website.
+
+*   [Google Fonts](https://fonts.google.com/) - Google fonts are used throughout the project to import the Libre Baskerville and Cabin fonts.
+
+*   [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) - Google Chrome's built in developer tools are used to inspect page elements and help debug issues with the site layout and test different CSS styles.
+
+*   [Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools) - Firefox Developer Tools have been used throughout the projects for testing and debugging code.
+
+*   [balsamiq Wireframes](https://balsamiq.com/wireframes/) - This was used to create wireframes for 'The Skeleton Plane' stage of UX design.
+
+*   [MS PAINT](https://support.microsoft.com/en-us/windows/get-microsoft-paint-a6b9578c-ed1c-5b09-0699-4ed8115f9aa9) - For cropping and resizing images.
+
+*   [Favicon](https://favicon.io/) - Favicon.io was used to make the site favicon.
+
+*   [AmIReponsive](http://ami.responsivedesign.is/) - This was used to make the multi device mockup in the README.
+
+*   [Adobe PDF Convertor](https://www.adobe.com/uk/acrobat/online/convert-pdf.html) - to convert the pdfs in the image gallery to jpg.
+
+*   [TinyPNG](https://tinypng.com/) - Used for all images to cut back the size of .png files.
+
+** **
+
+[Return to Table of Contents](#table-of-contents)
+
+** **
+
+
+## **Deployment**
+
+** **
+
+GitPod was used to write all code in this repository and pushed via Git to GitHub.
+
+**Using Git Hub Pages**
+
+*   Navigate to the gitHub [Repository]():
+*	Click the 'Settings' Tab.
+*	Scroll down to the GitHub Pages heading.
+*	Click the Save button.
+*	Click the link to go to the live deployed page.
+
+**Run Locally**
+
+*   Navigate to the GitHub Repository:
+*	Click the Code drop down menu.
+*	Either Download the ZIP file, unpackage locally and open with IDE (This route ends here) OR Copy Git URL from the HTTPS dialogue box.
+*	Open your developement editor of choice and open a terminal window in a directory of your choice.
+*	Use the 'git clone' command in terminal followed by the copied git URL.
+*	A clone of the project will be created locally on your machine.
+
+** **
+
+[Return to Table of Contents](#table-of-contents)
+
+** **
+
+## **Credits**
+
+** **
+
+### **Media**
+
+*  
+*	
+*   
+*   
+ 
+### **Content**
+
+*   
+
+### **Code Snippets**
+
+*	
+
+*	
+
+* 
+
+*	
+
+*	
+
+
+### **Readme**
+
+*	I would like to mention the other readme examples I used to help me create the structure of my own readme:
+	-	[John Doyle](https://github.com/Aramantos/MS1-World-Wide-Web)
+	-	[Patrik Österljung](https://github.com/oljung/portfolio-project-one)
+	-	[Marcin Kli](https://github.com/marcin-kli/MP1/blob/Milestone-Projects/README.md)
+	  
+** **
+
+[Return to Table of Contents](#table-of-contents)
+
+** **
+
+## **Acknowledgements**
+
+** **
+
+
+I would like to thank:
+
+*	My mentor [Adegbenga Adeye](https://github.com/deye9) for his enthusiasm, support, knowledge and excellent suggestions.
+
+*	
+
+*   
+
+*	
+
+*	
+
+** **
+
+[Return to Table of Contents](#table-of-contents)
+
+** **
+
+## **Support**
+
+** **
+
+
+If you require any help or assistance you may contact me on 
+
+katherine.biggs@mail.com
