@@ -14,7 +14,7 @@ body {
 
 #play-area {
     height: 100vh;
-    background-color: #9d81e9;
+    background-color: #b4b8ab;
     border-radius: 25px;
     justify-content: center;
     text-align: center;
@@ -25,10 +25,12 @@ body {
 
 h1 {
     font-family: 'Press Start 2P', cursive;
+    color: #153243;
 }
 
 p {
     font-family: 'Tienne', serif;
+    color: #153243;
 }
 
 #start {
@@ -39,22 +41,23 @@ p {
 .btn {
     border-radius: 5px;
     padding: 9px 20px;
-    color: white;
+    color: #153243;
     display: inline-block;
     text-align: center;
     text-shadow: 1px 1px #000000;
 }
 
 #btnstart {
-    background-color: black;
+    background-color: #284b63;
+    color: #b4b8ab
 }
 
 #btnhigh {
-    background-color: red;
+    background-color: 	#c59fc9;
 }
 
 #btnlow {
-    background-color: blue;
+    background-color: 	#8e4a49;
 }
 
 /* Responsive layout @media queries max-width 599px; */
