@@ -15,7 +15,25 @@ function gameStart() {
   rules.innerHTML = "Game Started!";
   document.getElementById('start').style.display = 'none';
   buildCards();
+  shuffleArray(cards);
 }
+
+//randomise the cards
+function shuffleArray(array) {
+    for (let i = array.length-1; i > 0; i--) {
+        let holder = Math.floor(Math.random() * (i + 1));
+        let temp = array[i];
+        array[i] = array[holder];
+        array[holder] = temp;
+    }
+    return array;
+}
+
+
+
+
+
+
 //build the cards - loop through the card arrays
 function buildCards() {
     cards = [];
