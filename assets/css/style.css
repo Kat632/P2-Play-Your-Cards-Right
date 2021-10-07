@@ -26,3 +26,15 @@ background-image: url("../images/retro_telly.png");
     margin-left: 20px;
 }
 
+h1 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+p {
+    font-family: 'Tienne', serif;
+}
+
+/* Responsive layout @media queries max-width 599px; */
+@media only screen and (max-width: 599px) {
+
+}
