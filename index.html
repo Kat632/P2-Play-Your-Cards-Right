@@ -13,32 +13,47 @@
 
 <body>
 
-<!--Navigation-->
+  <!--Navigation-->
 
   <header>
 
     <nav>
     </nav>
 
-    </header>
+  </header>
 
- <!--Main-->
+  <!--Main-->
 
-    <main>
-        <section>
-            <div id="play-area">
-              <h1>Play Your Cards Right</h1>
-              <div id="rules">How to Play: Select either High or Low for the next card.  Guess the value of the down-facing card verses the up-facing card.  Place your bet depending on how confident you are about your choice of High or Low on the next card.  As per the old TV show, the Ace is High in this game.</div>
-            </div>
-        </section>
-        <section></section>
-    </main>
+  <main>
+    <section>
+      <div id="play-area">
+        <div id="title">
+          <h1>Play Your Cards Right</h1>
+          <div id="rules">How to Play: Select either High or Low for the next card. Guess the value of the down-facing
+            card verses the up-facing card. Place your bet depending on how confident you are about your choice of High
+            or Low on the next card. As per the old TV show, the Ace is High in this game.</div>
+        </div>
 
-   
-<!--Footer-->
-    <footer>
+        <div id="cards"></div>
 
-    </footer>
-    <script src="assets/js/script.js"></script>
+        <div id="highLow">
+          <button id="btnhigh" type="button" onclick="hilo('high')" class="btn">High</button>
+          <button id="btnlow" type="button" onclick="hilo('low')" class="btn">Low</button>
+        </div>
+        <div id="start">
+          <button id="btnstart" type="button" onclick="gameStart()" class="btn">Start Game</button>
+        </div>
+      </div>
+    </section>
+    <section></section>
+  </main>
+
+
+  <!--Footer-->
+  <footer>
+
+  </footer>
+  <script src="assets/js/script.js"></script>
 </body>
+
 </html>

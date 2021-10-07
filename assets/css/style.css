@@ -1,28 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Tienne&display=swap');
 
+html {
+    margin: 0px;
+    height: 100%;
+}
+
 body {
-background-image: url("../images/retro_telly.png");
     background-color: #cccccc;
-    height: 80%;
-    width: 80%;
+    height: 100%;
     display: block;
     margin: 0 auto;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #play-area {
-    width: 1035px;
-    height: 825px;
+    height: 100vh;
     background-color: #9d81e9;
     border-radius: 25px;
-    display: flex;
-    position: absolute;
     justify-content: center;
+    text-align: center;
     align-items: center;
-    margin-top: 67px;
+    margin-top: 20px;
     margin-left: 20px;
 }
 
@@ -32,6 +29,32 @@ h1 {
 
 p {
     font-family: 'Tienne', serif;
+}
+
+#start {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 9px 20px;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 1px 1px #000000;
+}
+
+#btnstart {
+    background-color: black;
+}
+
+#btnhigh {
+    background-color: red;
+}
+
+#btnlow {
+    background-color: blue;
 }
 
 /* Responsive layout @media queries max-width 599px; */
