@@ -1,30 +1,29 @@
 let myQuids = 1000;
 
 //cards
-let cards = [];
+
 let suits = ["spades", "hearts", "clubs", "diams"];
 let numbers = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];
 let count = 0;
 let score = 0;
 let lives = 3;
+let cards = [];
 let cardOutput = document.getElementById('cards');
 
 let rules = document.getElementById('rules');
 let scoreOutput = document.getElementById('score');
 
 
-
-
 function gameStart() {
     rules.innerHTML = "Game Started!";
 
     //Hide and show various elements within the game play
-    document.getElementById('cards').innerHTML= "";
+    document.getElementById('cards').style.display = 'block';
     document.getElementById('start').style.display = 'none';
     document.getElementById('highLow').style.display = 'block';
     document.getElementById('score').style.display = 'block';
-    
-    
+
+
     buildCards();
     shuffleArray(cards);
     cardOutput.innerHTML += showCard();
@@ -48,9 +47,9 @@ function hilo(a) {
         score++
     } else {
         rules.innerHTML = "You were wrong!";
-        lives --;
-        if (lives <0) {
-        endPlay();
+        lives--;
+        if (lives < 0) {
+            endPlay();
         }
     }
     //scoreOutput.innerHTML = "SCORE:" +score+ "LIVES:("+lives+")";
@@ -58,7 +57,7 @@ function hilo(a) {
 
 function endPlay() {
     document.getElementById('highLow').style.display = 'none';
-    rules.innerHTML = "Game over your score was "+score;
+    rules.innerHTML = "Game over your score was " + score;
     document.getElementById('start').style.display = 'block';
 }
 
@@ -77,7 +76,8 @@ function shuffleArray(array) {
 function showCard() {
     let c = cards[count];
     let bgColor = (c.icon == "H" || c.icon == "D") ? 'red' : 'black'; //Get colours for the suits
-    return '<div class="icard" style="color:' + bgColor + '">' + c.num + '&' + c.suit + ';</div>'; //Show the colours to the user
+
+    return '<div class="icard ' + c.suit + '"> <div class="cardtop suit">' + c.num + '<br></div> <div class="cardmid suit"></div> <div class="cardbottom suit">' + c.num + '<br></div></div>';
 }
 
 

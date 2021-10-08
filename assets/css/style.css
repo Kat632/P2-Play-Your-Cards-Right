@@ -45,7 +45,7 @@ p {
     text-align: center;
 }
 
-#highLow, #score {
+#highLow, #score, #cards {
     display: none;
 }
 
@@ -53,7 +53,7 @@ p {
 
 #cards {
     margin-top: 30px;
-    height: 60px;
+    height: 240px;
     justify-content: left;
     text-align: left;
 }
@@ -124,11 +124,24 @@ p {
 
 .btn {
     border-radius: 5px;
-    padding: 9px 20px;
     color: #153243;
     display: inline-block;
     text-align: center;
     text-shadow: 1px 1px #000000;
+    background: #7C7C7C;
+	border-bottom: 6px inset rgba(0,0,0,.5);
+	border-left: 6px inset rgba(0,0,0,.5);
+	border-right: 6px inset rgba(255,255,255,.5);
+	border-top: 6px inset rgba(255,255,255,.5);
+	box-sizing: border-box;
+	cursor: pointer;
+	font-size: 2.2rem;
+	margin: 1rem;
+	min-width: 200px;
+	padding: .5rem;
+	text-transform: uppercase;
+	width: auto;
+    font-family: 'Press Start 2P', cursive;
 }
 
 #btnstart {
