@@ -4,7 +4,8 @@ let myQuids = 1000;
 let cards = [];
 let suits = ["spades","hearts","clubs","diams"];
 let numbers = ["2","3","4","5","6","7","8","9","10","J","Q","K","A"];
-
+let count = 0;
+let cardOutput = document.getElementById('cards');
 
 let rules = document.getElementById('rules');
 
@@ -16,6 +17,7 @@ function gameStart() {
   document.getElementById('start').style.display = 'none';
   buildCards();
   shuffleArray(cards);
+  cardOutput.innerHTML += showCard()
 }
 
 //randomise the cards
@@ -27,6 +29,11 @@ function shuffleArray(array) {
         array[holder] = temp;
     }
     return array;
+}
+
+//display the cards to the user
+function showCard() {
+    return '<div>'+cards[count].num+'&'+cards[count].suit+';</div>';
 }
 
 
