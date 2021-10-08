@@ -22,10 +22,19 @@ function gameStart() {
 }
 
 function hilo(a) {
-
-  count++;
   //calculate winner
+  let win = false;
+  let oldCard = cards[count].cardValue;
+  count++;
   cardOutput.innerHTML += showCard();
+  let newCard = cards[count].cardValue;
+  if(a == 'high' && oldCard < newCard){win=true;}
+  else if (a == 'low' && oldCard > newCard){win=true;}
+  if(win) {
+    rules.innerHTML = "You were right!";
+  } else {
+    rules.innerHTML = "You were wrong!";
+  }
 }
 
 //randomise the cards
@@ -43,7 +52,7 @@ function shuffleArray(array) {
 function showCard() {
     let c = cards[count];
     let bgColor = (c.icon == "H" || c.icon == "D") ? 'red' : 'black';  //Get colours for the suits
-    return '<span style="color:'+bgColor+'">'+c.num+'&'+c.suit+';</span>'; //Show the colours to the user
+    return '<span class="icard" style="color:'+bgColor+'">'+c.num+'&'+c.suit+';</span>'; //Show the colours to the user
 }
 
 
