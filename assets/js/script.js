@@ -42,8 +42,8 @@ function shuffleArray(array) {
 //display the cards to the user
 function showCard() {
     let c = cards[count];
-    let bgColor = (c.icon == "H" || c.icon == "D") ? 'red' : 'black';
-    return '<div style="color:'+bgColor+'">'+c.num+'&'+c.suit+';</div>';
+    let bgColor = (c.icon == "H" || c.icon == "D") ? 'red' : 'black';  //Get colours for the suits
+    return '<span style="color:'+bgColor+'">'+c.num+'&'+c.suit+';</span>'; //Show the colours to the user
 }
 
 
