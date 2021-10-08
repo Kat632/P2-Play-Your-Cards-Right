@@ -42,6 +42,7 @@ function buildCards() {
             let card = {
                 suit : suits[s]
                 , num : numbers[n]
+                , cardValue : parseInt(n) + 2
             }
             cards.push(card);
         }
