@@ -17,9 +17,13 @@ let scoreOutput = document.getElementById('score');
 
 function gameStart() {
     rules.innerHTML = "Game Started!";
+
+    //Hide and show various elements within the game play
+    document.getElementById('cards').innerHTML= "";
     document.getElementById('start').style.display = 'none';
     document.getElementById('highLow').style.display = 'block';
     document.getElementById('score').style.display = 'block';
+    
     
     buildCards();
     shuffleArray(cards);
@@ -73,7 +77,7 @@ function shuffleArray(array) {
 function showCard() {
     let c = cards[count];
     let bgColor = (c.icon == "H" || c.icon == "D") ? 'red' : 'black'; //Get colours for the suits
-    return '<span class="icard" style="color:' + bgColor + '">' + c.num + '&' + c.suit + ';</span>'; //Show the colours to the user
+    return '<div class="icard" style="color:' + bgColor + '">' + c.num + '&' + c.suit + ';</div>'; //Show the colours to the user
 }
 
 

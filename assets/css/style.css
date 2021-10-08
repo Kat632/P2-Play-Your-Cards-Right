@@ -50,14 +50,60 @@ p {
 }
 
 /* cards styling */
-.icard {
-    padding: 10px;
-    border: 1px solid black;
-}
 
 #cards {
     margin-top: 30px;
     height: 60px;
+    justify-content: left;
+    text-align: left;
+}
+
+.icard {
+    padding: 10px;
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    border-radius: 14px;
+    background-color: white;
+    position: absolute;
+    display: inline-block;
+}
+
+.spades, .clubs {
+    color: black;
+}
+
+.hearts, .diams {
+    color: red;
+}
+
+.cardtop {
+    font-size: 2em;
+    top: 5px;
+    left: 5px;
+    position: absolute;
+}
+
+.cardmid{
+    text-align: center;
+    font-size: 7em;
+    position: absolute;
+    top: 38px;
+    left: 50px;
+}
+
+.cardbottom{
+    font-size: 2em;
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    bottom: 5px;
+    right: 5px;
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
 }
 
 .btn {
