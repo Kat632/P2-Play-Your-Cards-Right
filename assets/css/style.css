@@ -69,6 +69,22 @@ p {
     display: inline-block;
 }
 
+.hearts .suit::after {
+    content: '\2665';
+}
+
+.spades .suit::after {
+    content: '\2660';
+}
+
+.clubs .suit::after {
+    content: '\2663';
+}
+
+.diams .suit::after {
+    content: '\2666';
+}
+
 .spades, .clubs {
     color: black;
 }
@@ -79,9 +95,10 @@ p {
 
 .cardtop {
     font-size: 2em;
-    top: 5px;
-    left: 5px;
+    top: 6px;
+    left: 6px;
     position: absolute;
+    line-height: 1em;
 }
 
 .cardmid{
@@ -99,11 +116,10 @@ p {
     -moz-transform: rotate(-180deg);
     -ms-transform: rotate(-180deg);
     -o-transform: rotate(-180deg);
-    bottom: 5px;
-    right: 5px;
+    bottom: 6px;
+    right: 6px;
     position: absolute;
-    bottom: 2px;
-    right: 2px;
+    line-height: 1em;
 }
 
 .btn {
