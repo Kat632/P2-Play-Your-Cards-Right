@@ -15,9 +15,17 @@ let rules = document.getElementById('rules');
 function gameStart() {
   rules.innerHTML = "Game Started!";
   document.getElementById('start').style.display = 'none';
+  document.getElementById('highLow').style.display = 'block';
   buildCards();
   shuffleArray(cards);
-  cardOutput.innerHTML += showCard()
+  cardOutput.innerHTML += showCard();
+}
+
+function hilo(a) {
+
+  count++;
+  //calculate winner
+  cardOutput.innerHTML += showCard();
 }
 
 //randomise the cards
