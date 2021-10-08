@@ -23,6 +23,7 @@ function gameStart() {
     buildCards();
     shuffleArray(cards);
     cardOutput.innerHTML += showCard();
+    scoreOutput.innerHTML = "SCORE:"+score+"LIVES:"("+lives+");
 }
 
 function hilo(a) {
@@ -47,12 +48,12 @@ function hilo(a) {
         endPlay();
         }
     }
-    scoreOutput.innerHTML = "SCORE:"+score;
+    scoreOutput.innerHTML = "SCORE:" +score+ "LIVES:("+lives+")";
 }
 
 function endPlay() {
     document.getElementById('highLow').style.display = 'none';
-    rules.innerHTML = "Game over your score was" +score;"!";
+    rules.innerHTML = "Game over your score was "+score;
     document.getElementById('start').style.display = 'block';
 }
 
