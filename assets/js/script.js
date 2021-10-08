@@ -5,9 +5,12 @@ let cards = [];
 let suits = ["spades", "hearts", "clubs", "diams"];
 let numbers = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];
 let count = 0;
+let score = 0;
+let lives = 3;
 let cardOutput = document.getElementById('cards');
 
 let rules = document.getElementById('rules');
+let scoreOutput = document.getElementById('score');
 
 
 
@@ -16,6 +19,7 @@ function gameStart() {
     rules.innerHTML = "Game Started!";
     document.getElementById('start').style.display = 'none';
     document.getElementById('highLow').style.display = 'block';
+    
     buildCards();
     shuffleArray(cards);
     cardOutput.innerHTML += showCard();
@@ -35,9 +39,21 @@ function hilo(a) {
     }
     if (win) {
         rules.innerHTML = "You were right!";
+        score++
     } else {
         rules.innerHTML = "You were wrong!";
+        lives --;
+        if (lives <0) {
+        endPlay();
+        }
     }
+    scoreOutput.innerHTML = "SCORE:"+score;
+}
+
+function endPlay() {
+    document.getElementById('highLow').style.display = 'none';
+    rules.innerHTML = "Game over your score was" +score;"!";
+    document.getElementById('start').style.display = 'block';
 }
 
 //randomise the cards
