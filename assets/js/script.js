@@ -38,11 +38,13 @@ function shuffleArray(array) {
 function buildCards() {
     cards = [];
     for(s in suits) {
+        let suit = suits[s][0].toUpperCase();
         for (n in numbers) {
             let card = {
                 suit : suits[s]
                 , num : numbers[n]
                 , cardValue : parseInt(n) + 2
+                , icon : suit
             }
             cards.push(card);
         }
