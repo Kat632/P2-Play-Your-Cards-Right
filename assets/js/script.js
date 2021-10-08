@@ -19,11 +19,12 @@ function gameStart() {
     rules.innerHTML = "Game Started!";
     document.getElementById('start').style.display = 'none';
     document.getElementById('highLow').style.display = 'block';
+    document.getElementById('score').style.display = 'block';
     
     buildCards();
     shuffleArray(cards);
     cardOutput.innerHTML += showCard();
-    scoreOutput.innerHTML = "SCORE:"+score+"LIVES:"("+lives+");
+    //scoreOutput.innerHTML = "SCORE:"+score+"LIVES:"("+lives+");
 }
 
 function hilo(a) {
@@ -48,7 +49,7 @@ function hilo(a) {
         endPlay();
         }
     }
-    scoreOutput.innerHTML = "SCORE:" +score+ "LIVES:("+lives+")";
+    //scoreOutput.innerHTML = "SCORE:" +score+ "LIVES:("+lives+")";
 }
 
 function endPlay() {
