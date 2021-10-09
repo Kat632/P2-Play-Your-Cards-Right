@@ -144,23 +144,25 @@ p {
 	font-size: 1.7rem;
 	margin: 1rem;
 	min-width: 200px;
-	padding: .5rem;
+	padding: 1rem;
 	text-transform: uppercase;
 	width: auto;
     font-family: 'Press Start 2P', cursive;
 }
 
 #btnstart {
-    background-color: #284b63;
-    color: #b4b8ab
+    background-color: #153243;
+    color: #fff8e7;
 }
 
 #btnhigh {
-    background-color: 	#c59fc9;
+    background-color: 	#04724d;
+    color: #fff8e7;
 }
 
 #btnlow {
     background-color: 	#8e4a49;
+    color: #fff8e7;
 }
 
 /* Responsive layout @media queries max-width 599px; */
