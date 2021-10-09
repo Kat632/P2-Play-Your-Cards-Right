@@ -44,7 +44,7 @@ function hilo(a) {
     //calculate winner
     let win = false;
     let oldCard = cards[count].cardValue;
-    let myBetAmount = myB.value;
+    let myBetAmount = parseInt(myB.value);
     count++;
     cardOutput.innerHTML += showCard();
     let newCard = cards[count].cardValue;
@@ -54,10 +54,10 @@ function hilo(a) {
         win = true;
     }
     if (win) {
-        rules.innerHTML = "You were right!<br>You made £" +myBetAmount;
+        rules.innerHTML = "You were right! You made £" +myBetAmount;
         myQuids = myQuids + myBetAmount;
     } else {
-        rules.innerHTML = "You were wrong!<br>You lost £" +myBetAmount;
+        rules.innerHTML = "You were wrong! You lost £" +myBetAmount;
         myQuids = myQuids - myBetAmount;
     }
     myMoney.innerHTML = myQuids;
