@@ -5,8 +5,6 @@ let myQuids = 1000;
 let suits = ["spades", "hearts", "clubs", "diams"];
 let numbers = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];
 let count = 0;
-let score = 0;
-let lives = 3;
 let cards = [];
 let cardOutput = document.getElementById('cards');
 
@@ -44,13 +42,8 @@ function hilo(a) {
     }
     if (win) {
         rules.innerHTML = "You were right!";
-        score++
     } else {
         rules.innerHTML = "You were wrong!";
-        lives--;
-        if (lives < 0) {
-            endPlay();
-        }
     }
     //scoreOutput.innerHTML = "SCORE:" +score+ "LIVES:("+lives+")";
 }
@@ -76,10 +69,10 @@ function shuffleArray(array) {
 function showCard() {
     let c = cards[count];
     let bgColor = (c.icon == "H" || c.icon == "D") ? 'red' : 'black'; //Get colours for the suits
-
-    return '<div class="icard ' + c.suit + '"> <div class="cardtop suit">' + c.num + '<br></div> <div class="cardmid suit"></div> <div class="cardbottom suit">' + c.num + '<br></div></div>';
+    var hpos = (count > 0) ? count * 200 + 30 : 30;
+    console.log(hpos);
+    return '<div class="icard ' + c.suit + '" style="left:' + hpos + 'px;"> <div class="cardtop suit">' + c.num + '<br></div> <div class="cardmid suit"></div>  <div class="cardbottom suit">' + c.num + '<br></div></div>';
 }
-
 
 
 
