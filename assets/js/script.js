@@ -60,6 +60,13 @@ function hilo(a) {
         rules.innerHTML = "You were wrong! You lost £" +myBetAmount;
         myQuids = myQuids - myBetAmount;
     }
+    let currentBet = parseInt(myB.value);
+    if (myQuids < 1) {
+        myB.value = 0;
+    }
+    if (currentBet > myQuids) {
+        myB.value = myQuids;
+    }
     myMoney.innerHTML = myQuids;
     if (count > 3) {
         endPlay()
