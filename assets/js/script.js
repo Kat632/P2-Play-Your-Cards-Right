@@ -45,12 +45,15 @@ function hilo(a) {
     } else {
         rules.innerHTML = "You were wrong!";
     }
+    if (count > 3) {
+        endPlay()
+    }
     //scoreOutput.innerHTML = "SCORE:" +score+ "LIVES:("+lives+")";
 }
 
 function endPlay() {
     document.getElementById('highLow').style.display = 'none';
-    rules.innerHTML = "Game over your score was " + score;
+    rules.innerHTML = "Game over!";
     document.getElementById('start').style.display = 'block';
 }
 
