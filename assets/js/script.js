@@ -11,6 +11,18 @@ let cardOutput = document.getElementById('cards');
 let rules = document.getElementById('rules');
 let scoreOutput = document.getElementById('score');
 
+let myMoney = document.getElementById('quids');
+let myB = document.getElementById('myBet');
+
+myB.addEventListener("change", function() {
+    if (this.value > myQuids) {
+        this.value = myQuids;
+    }
+    if (this.value < 0) {
+        this.value = 0;
+    }
+})
+
 
 function gameStart() {
     rules.innerHTML = "Game Started!";
@@ -72,7 +84,7 @@ function shuffleArray(array) {
 function showCard() {
     let c = cards[count];
     let bgColor = (c.icon == "H" || c.icon == "D") ? 'red' : 'black'; //Get colours for the suits
-    var hpos = (count > 0) ? count * 200 + 30 : 30;
+    let hpos = (count > 0) ? count * 200 + 30 : 30;
     console.log(hpos);
     return '<div class="icard ' + c.suit + '" style="left:' + hpos + 'px;"> <div class="cardtop suit">' + c.num + '<br></div> <div class="cardmid suit"></div>  <div class="cardbottom suit">' + c.num + '<br></div></div>';
 }
