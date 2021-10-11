@@ -1,4 +1,4 @@
-let myQuids = 1000;
+let myQuids = 0;
 
 //cards
 
@@ -14,17 +14,21 @@ let scoreOutput = document.getElementById('score');
 let myMoney = document.getElementById('quids');
 let myB = document.getElementById('myBet');
 
-myB.addEventListener("change", function() {
-    if (this.value > myQuids) {
-        this.value = myQuids;
-    }
-    if (this.value < 0) {
-        this.value = 0;
-    }
-})
+myB.addEventListener('change', checkMe);
+myB.addEventListener('blur', checkMe);
 
+function checkMe() {
+        if (this.value > myQuids) {
+            this.value = myQuids;
+        }
+        if (this.value < 0) {
+            this.value = 0;
+        }
+        rules.innerHTML = "Bet changed to £" + this.value;
+    }
 
 function gameStart() {
+    myQuids = 1000;
     rules.innerHTML = "Game Started!";
 
     //Hide and show various elements within the game play
@@ -67,6 +71,7 @@ function hilo(a) {
     if (currentBet > myQuids) {
         myB.value = myQuids;
     }
+    myB.max= myQuids;
     myMoney.innerHTML = myQuids;
     if (count > 3) {
         endPlay()
@@ -75,7 +80,7 @@ function hilo(a) {
 
 function endPlay() {
     document.getElementById('highLow').style.display = 'none';
-    rules.innerHTML = "Game over!";
+    rules.innerHTML = "Game over! You have £" + myQuids;
     document.getElementById('start').style.display = 'block';
 }
 
