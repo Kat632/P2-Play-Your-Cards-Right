@@ -45,7 +45,7 @@ p {
     text-align: center;
 }
 
-#highLow, #score, #cards {
+#highLow, #score {
     display: none;
 }
 

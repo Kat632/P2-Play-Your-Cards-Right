@@ -1,47 +1,51 @@
 let myQuids = 0;
+let count = 0;
+let firstRun = true;
 
 //cards
-
 let suits = ["spades", "hearts", "clubs", "diams"];
 let numbers = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];
-let count = 0;
 let cards = [];
-let cardOutput = document.getElementById('cards');
 
+//Get html elements
+let cardOutput = document.getElementById('cards');
 let rules = document.getElementById('rules');
 let scoreOutput = document.getElementById('score');
-
 let myMoney = document.getElementById('quids');
 let myB = document.getElementById('myBet');
 
 myB.addEventListener('change', checkMe);
 myB.addEventListener('blur', checkMe);
 
+
+//Check if user is making a bet and check if they are changing it according to our rules.  You can't bet more money than you have
 function checkMe() {
-        if (this.value > myQuids) {
-            this.value = myQuids;
-        }
-        if (this.value < 0) {
-            this.value = 0;
-        }
-        rules.innerHTML = "Bet changed to £" + this.value;
+    if (this.value > myQuids) {
+        this.value = myQuids;
     }
+    if (this.value < 0) {
+        this.value = 0;
+    }
+    rules.innerHTML = "Bet changed to £" + this.value;
+}
 
 function gameStart() {
     myQuids = 1000;
+    count = 0;
     rules.innerHTML = "Game Started!";
 
     //Hide and show various elements within the game play
-    document.getElementById('cards').style.display = 'block';
+    document.getElementById('cards').innerHTML = "";
     document.getElementById('start').style.display = 'none';
     document.getElementById('highLow').style.display = 'block';
     document.getElementById('score').style.display = 'block';
 
-
-    buildCards();
+    if (firstRun) {
+        buildCards();
+        firstRun = false;
+    }
     shuffleArray(cards);
     cardOutput.innerHTML += showCard();
-    //scoreOutput.innerHTML = "SCORE:"+score+"LIVES:"("+lives+");
 }
 
 function hilo(a) {
@@ -58,10 +62,10 @@ function hilo(a) {
         win = true;
     }
     if (win) {
-        rules.innerHTML = "You were right! You made £" +myBetAmount;
+        rules.innerHTML = "You were right! You made £" + myBetAmount;
         myQuids = myQuids + myBetAmount;
     } else {
-        rules.innerHTML = "You were wrong! You lost £" +myBetAmount;
+        rules.innerHTML = "You were wrong! You lost £" + myBetAmount;
         myQuids = myQuids - myBetAmount;
     }
     let currentBet = parseInt(myB.value);
@@ -71,7 +75,7 @@ function hilo(a) {
     if (currentBet > myQuids) {
         myB.value = myQuids;
     }
-    myB.max= myQuids;
+    myB.max = myQuids;
     myMoney.innerHTML = myQuids;
     if (count > 3) {
         endPlay()
@@ -82,6 +86,7 @@ function endPlay() {
     document.getElementById('highLow').style.display = 'none';
     rules.innerHTML = "Game over! You have £" + myQuids;
     document.getElementById('start').style.display = 'block';
+    document.getElementById('score').style.display = 'none';
 }
 
 //randomise the cards
@@ -100,13 +105,8 @@ function showCard() {
     let c = cards[count];
     let bgColor = (c.icon == "H" || c.icon == "D") ? 'red' : 'black'; //Get colours for the suits
     let hpos = (count > 0) ? count * 200 + 30 : 30;
-    console.log(hpos);
     return '<div class="icard ' + c.suit + '" style="left:' + hpos + 'px;"> <div class="cardtop suit">' + c.num + '<br></div> <div class="cardmid suit"></div>  <div class="cardbottom suit">' + c.num + '<br></div></div>';
 }
-
-
-
-
 
 //build the cards - loop through the card arrays
 function buildCards() {
@@ -123,5 +123,4 @@ function buildCards() {
             cards.push(card);
         }
     }
-    console.log(cards);
 }
