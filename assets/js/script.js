@@ -84,9 +84,18 @@ function hilo(a) {
 
 function endPlay() {
     document.getElementById('highLow').style.display = 'none';
-    rules.innerHTML = "Game over! You have £" + myQuids;
     document.getElementById('start').style.display = 'block';
     document.getElementById('score').style.display = 'none';
+    document.getElementById('cards').style.display = 'none';
+    rules.innerHTML = "Game over! You have £" + myQuids;
+    displayPrize();
+}
+
+function displayPrize() {
+    if (myQuids > 4000) {
+        document.getElementById("playerResult").innerHTML = "<img src=assets/images/mini_city_e_1985.jpg>";
+    }
+
 }
 
 //randomise the cards

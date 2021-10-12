@@ -71,6 +71,13 @@ p {
     display: none;
 }
 
+#playerResult {
+    width: 500px;
+    height: 500px;
+    z-index: 1;
+    position: absolute;
+}
+
 /* cards styling */
 
 #cards-container {
