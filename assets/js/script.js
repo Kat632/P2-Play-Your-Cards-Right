@@ -18,7 +18,7 @@ myB.addEventListener('change', checkMe);
 myB.addEventListener('blur', checkMe);
 
 
-//Check if user is making a bet and check if they are changing it according to our rules.  You can't bet more money than you have
+//Check if user is making a bet and check if they are changing it according to the rules.  You can't bet more money than you have
 function checkMe() {
     if (this.value > myQuids) {
         this.value = myQuids;
