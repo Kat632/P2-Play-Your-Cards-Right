@@ -16,9 +16,9 @@
   <!--Navigation-->
 
   <header>
-    <div id ="title-container">
+    <div id="title-container">
       <div id="title">
-       <h1>Play Your Cards Right</h1>
+        <h1>Play Your Cards Right</h1>
       </div>
     </div>
 
@@ -33,21 +33,38 @@
     <section>
       <div id="play-area">
 
-          <div id="rules">
-            <p>How to Play:</p>
-            <p>Select either High or Low for the next card. Guess the value of the down-facing
-              card versus the up-facing card. Place your bet depending on how confident you are about your choice of
-              High
-              or Low on the next card. As per the old TV show, the Ace is High in this game.</p>
-          </div>
+        <div id="rules">
+          <p>How to Play:</p>
+          <p>Select either High or Low for the next card. Guess the value of the down-facing
+            card versus the up-facing card. Place your bet depending on how confident you are about your choice of
+            High
+            or Low on the next card. As per the old TV show, the Ace is High in this game.</p>
+        </div>
 
         <div id="start">
           <button id="btnstart" type="button" onclick="gameStart()" class="btn">Start Game</button>
         </div>
 
+        <div id="playerResult1">
+          <img id="miniImage" src="assets/images/mini_city_e_1985.jpg" alt="A 1985 Mini City car in blue"
+            style="width:100%;max-width:300px">
+          <!-- The Modal -->
+          <div id="miniModal" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+          </div>
+        </div>
+
         <div id="score">
           <div>
-            <p>Total £<span id="quids">1000</span>  Place your bet:</p>
+            <p>Total £<span id="quids">1000</span> Place your bet:</p>
             <input type="number" id="myBet" value="0" min="1" max="100">
           </div>
         </div>
@@ -67,9 +84,6 @@
           <button id="btnlow" type="button" onclick="hilo('low')" class="btn">Low</button>
         </div>
 
-        <div id="playerResult">
-
-        </div>
       </div>
     </section>
   </main>

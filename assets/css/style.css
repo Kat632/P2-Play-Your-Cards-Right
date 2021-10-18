@@ -72,11 +72,13 @@ p {
 }
 
 #playerResult {
-    width: 500px;
-    height: 500px;
     z-index: 1;
-    position: absolute;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
+
+
 
 /* cards styling */
 

@@ -14,6 +14,9 @@ let scoreOutput = document.getElementById('score');
 let myMoney = document.getElementById('quids');
 let myB = document.getElementById('myBet');
 
+//Hide html elements
+document.getElementById("myMiniImg").style.display = "none";
+
 myB.addEventListener('change', checkMe);
 myB.addEventListener('blur', checkMe);
 
@@ -86,14 +89,15 @@ function endPlay() {
     document.getElementById('highLow').style.display = 'none';
     document.getElementById('start').style.display = 'block';
     document.getElementById('score').style.display = 'none';
-    document.getElementById('cards').style.display = 'none';
     rules.innerHTML = "Game over! You have £" + myQuids;
     displayPrize();
 }
 
 function displayPrize() {
-    if (myQuids > 4000) {
-        document.getElementById("playerResult").innerHTML = "<img src=assets/images/mini_city_e_1985.jpg>";
+    if (myQuids > 12000) {
+        document.getElementById("playerResult1");
+    } else if (myQuids > 1000) {
+        document.getElementById("playerResult").innerHTML = "<p>Congratulations, you have won a digital watch!</p><img src=assets/images/olia-nayda-db3pkarcxhi-unsplas.jpg>";
     }
 
 }
