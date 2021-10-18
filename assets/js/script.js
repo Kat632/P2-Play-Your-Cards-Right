@@ -94,10 +94,13 @@ function endPlay() {
 }
 
 function displayPrize() {
-    if (myQuids > 12000) {
-        document.getElementById("playerResult1");
+    document.getElementById('playerResult').style.display = "";
+    if (myQuids > 2000) {
+        document.getElementById("playerResult1").style.display = "block";
+        document.getElementById("playerResult2").style.display = "none";
     } else if (myQuids > 1000) {
-        document.getElementById("playerResult").innerHTML = "<p>Congratulations, you have won a digital watch!</p><img src=assets/images/olia-nayda-db3pkarcxhi-unsplas.jpg>";
+        document.getElementById("playerResult2").style.display = "block";
+        document.getElementById("playerResult1").style.display = "none";
     }
 
 }

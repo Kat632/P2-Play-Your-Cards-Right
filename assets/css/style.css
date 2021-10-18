@@ -71,11 +71,12 @@ p {
     display: none;
 }
 
-#playerResult {
+#playerResult1 {
     z-index: 1;
     justify-content: center;
     text-align: center;
     align-items: center;
+    display: none;
 }
 
 

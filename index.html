@@ -45,46 +45,53 @@
           <button id="btnstart" type="button" onclick="gameStart()" class="btn">Start Game</button>
         </div>
 
-        <div id="playerResult1">
-          <img id="miniImage" src="assets/images/mini_city_e_1985.jpg" alt="A 1985 Mini City car in blue"
-            style="width:100%;max-width:300px">
-          <!-- The Modal -->
-          <div id="miniModal" class="modal">
+        <div id="playerResult">
+          <div id="playerResult1">
+            <img id="miniImage" src="assets/images/mini_city_e_1985.jpg" alt="A 1985 Mini City car in blue"
+              style="width:100%;max-width:300px">
+            <div id="playerResult2">
+              <img id="watchImage" src="assets/images/olia-nayda-db3pkarcxhi-unsplas.jpg"
+                alt="A retro-looking Casio digital watch" style="width:100%;max-width:300px">
+              <!-- The Modal -->
+              <div id="miniModal" class="modal">
 
-            <!-- The Close Button -->
-            <span class="close">&times;</span>
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
 
-            <!-- Modal Content (The Image) -->
-            <img class="modal-content" id="img01">
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
 
-            <!-- Modal Caption (Image Text) -->
-            <div id="caption"></div>
-          </div>
-        </div>
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+              </div>
 
-        <div id="score">
-          <div>
-            <p>Total £<span id="quids">1000</span> Place your bet:</p>
-            <input type="number" id="myBet" value="0" min="1" max="100">
-          </div>
-        </div>
-
-        <div id="cards-container">
-          <div id="cards">
-            <div class="icard hearts">
-              <div class="cardtop suit">Q<br></div>
-              <div class="cardmid suit"></div>
-              <div class="cardbottom suit">Q<br></div>
             </div>
           </div>
-        </div>
 
-        <div id="highLow">
-          <button id="btnhigh" type="button" onclick="hilo('high')" class="btn">High</button>
-          <button id="btnlow" type="button" onclick="hilo('low')" class="btn">Low</button>
-        </div>
 
-      </div>
+          <div id="score">
+            <div>
+              <p>Total £<span id="quids">1000</span> Place your bet:</p>
+              <input type="number" id="myBet" value="0" min="1" max="100">
+            </div>
+          </div>
+
+          <div id="cards-container">
+            <div id="cards">
+              <div class="icard hearts">
+                <div class="cardtop suit">Q<br></div>
+                <div class="cardmid suit"></div>
+                <div class="cardbottom suit">Q<br></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="highLow">
+            <button id="btnhigh" type="button" onclick="hilo('high')" class="btn">High</button>
+            <button id="btnlow" type="button" onclick="hilo('low')" class="btn">Low</button>
+          </div>
+
+        </div>
     </section>
   </main>
 
