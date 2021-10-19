@@ -75,6 +75,7 @@ function hilo(a) {
     let currentBet = parseInt(myB.value);
     if (myQuids < 1) {
         myB.value = 0;
+        endPlay();
     }
     if (currentBet > myQuids) {
         myB.value = myQuids;
@@ -99,24 +100,45 @@ function displayPrize() {
     document.getElementById('playerResult').style.display = "";
     if (myQuids > 12000) {
         document.getElementById("playerResult1").style.display = "block";
+        document.getElementById("playerResult0").style.display = "none";
         document.getElementById("playerResult2").style.display = "none";
         document.getElementById("playerResult3").style.display = "none";
         document.getElementById("playerResult4").style.display = "none";
+        document.getElementById("playerResult5").style.display = "none";   
     } else if ((myQuids > 8000)  && (myQuids < 11999)) {
         document.getElementById("playerResult4").style.display = "block";
         document.getElementById("playerResult3").style.display = "none";
         document.getElementById("playerResult1").style.display = "none";
         document.getElementById("playerResult2").style.display = "none";
+        document.getElementById("playerResult0").style.display = "none";
+        document.getElementById("playerResult5").style.display = "none";   
     } else if ((myQuids > 5000) && (myQuids < 7999)) {
         document.getElementById("playerResult3").style.display = "block";
         document.getElementById("playerResult1").style.display = "none";
         document.getElementById("playerResult2").style.display = "none";
         document.getElementById("playerResult4").style.display = "none";
+        document.getElementById("playerResult0").style.display = "none";
     } else if ((myQuids > 1000) && (myQuids < 4999)) {
         document.getElementById("playerResult2").style.display = "block";
         document.getElementById("playerResult1").style.display = "none";
         document.getElementById("playerResult3").style.display = "none";
         document.getElementById("playerResult4").style.display = "none";
+        document.getElementById("playerResult0").style.display = "none";
+        document.getElementById("playerResult5").style.display = "none";   
+    } else if ((myQuids > 1) && (myQuids < 999)) {
+        document.getElementById("playerResult5").style.display = "block";
+        document.getElementById("playerResult0").style.display = "none";
+        document.getElementById("playerResult1").style.display = "none";
+        document.getElementById("playerResult2").style.display = "none";
+        document.getElementById("playerResult3").style.display = "none";
+        document.getElementById("playerResult4").style.display = "none";  
+    } else {
+        document.getElementById("playerResult0").style.display = "block";
+        document.getElementById("playerResult1").style.display = "none";
+        document.getElementById("playerResult2").style.display = "none";
+        document.getElementById("playerResult3").style.display = "none";
+        document.getElementById("playerResult4").style.display = "none";
+        document.getElementById("playerResult5").style.display = "none";       
     }
 };
 
@@ -136,7 +158,7 @@ function showCard() {
     let c = cards[count];
     let bgColor = (c.icon == "H" || c.icon == "D") ? 'red' : 'black'; //Get colours for the suits
     let hpos = (count > 0) ? count * 200 + 30 : 30;
-    return '<div class="icard ' + c.suit + '" style="center:' + hpos + 'px;"> <div class="cardtop suit">' + c.num + '<br></div> <div class="cardmid suit"></div>  <div class="cardbottom suit">' + c.num + '<br></div></div>';
+    return '<div class="icard ' + c.suit + '" style="left:' + hpos + 'px;"> <div class="cardtop suit">' + c.num + '<br></div> <div class="cardmid suit"></div>  <div class="cardbottom suit">' + c.num + '<br></div></div>';
 }
 
 //build the cards - loop through the card arrays

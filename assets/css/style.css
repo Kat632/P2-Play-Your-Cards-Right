@@ -71,7 +71,7 @@ p {
     display: none;
 }
 
-#playerResult1, #playerResult2 {
+#playerResult0, #playerResult1, #playerResult2, #playerResult3, #playerResult4, #playerResult5 {
     z-index: 1;
     justify-content: center;
     text-align: center;
