@@ -1,6 +1,6 @@
 let myQuids = 0;
 let count = 0;
-let firstRun = true;
+//let firstRun = true;
 
 //cards
 let suits = ["spades", "hearts", "clubs", "diams"];
@@ -13,9 +13,11 @@ let rules = document.getElementById('rules');
 let scoreOutput = document.getElementById('score');
 let myMoney = document.getElementById('quids');
 let myB = document.getElementById('myBet');
+let result = document.getElementById("playerResult");
 
 //Hide html elements
-document.getElementById("playerResult").style.display = "none";
+cardOutput.style.display = "none";
+result.style.display = "none";
 
 myB.addEventListener('change', checkMe);
 myB.addEventListener('blur', checkMe);
@@ -36,18 +38,18 @@ function gameStart() {
     myQuids = 1000;
     count = 0;
     rules.innerHTML = "Game Started!";
+    cardOutput.style.display = "block";
 
     //Hide and show various elements within the game play
-    document.getElementById('cards').innerHTML = "";
     document.getElementById('start').style.display = 'none';
     document.getElementById('playerResult').style.display = "none";
     document.getElementById('highLow').style.display = 'block';
     document.getElementById('score').style.display = 'block';
 
-    if (firstRun) {
+    //if (firstRun) {
         buildCards();
-        firstRun = false;
-    }
+        //firstRun = false;
+    //}
     shuffleArray(cards);
     cardOutput.innerHTML += showCard();
 }
@@ -96,6 +98,7 @@ function endPlay() {
 }
 
 function displayPrize() {
+    
     document.getElementById('cards').style.display = "none";
     document.getElementById('playerResult').style.display = "";
     if (myQuids > 12000) {
@@ -132,7 +135,7 @@ function displayPrize() {
         document.getElementById("playerResult2").style.display = "none";
         document.getElementById("playerResult3").style.display = "none";
         document.getElementById("playerResult4").style.display = "none";  
-    } else {
+    } else if (myQuids < 0) {
         document.getElementById("playerResult0").style.display = "block";
         document.getElementById("playerResult1").style.display = "none";
         document.getElementById("playerResult2").style.display = "none";
