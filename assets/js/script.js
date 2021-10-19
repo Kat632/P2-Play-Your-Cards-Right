@@ -101,17 +101,24 @@ function displayPrize() {
         document.getElementById("playerResult1").style.display = "block";
         document.getElementById("playerResult2").style.display = "none";
         document.getElementById("playerResult3").style.display = "none";
-    } else if (myQuids > 5000) {
+        document.getElementById("playerResult4").style.display = "none";
+    } else if ((myQuids > 8000)  && (myQuids < 11999)) {
+        document.getElementById("playerResult4").style.display = "block";
+        document.getElementById("playerResult3").style.display = "none";
+        document.getElementById("playerResult1").style.display = "none";
+        document.getElementById("playerResult2").style.display = "none";
+    } else if ((myQuids > 5000) && (myQuids < 7999)) {
         document.getElementById("playerResult3").style.display = "block";
         document.getElementById("playerResult1").style.display = "none";
         document.getElementById("playerResult2").style.display = "none";
-    } else if (myQuids > 1000) {
+        document.getElementById("playerResult4").style.display = "none";
+    } else if ((myQuids > 1000) && (myQuids < 4999)) {
         document.getElementById("playerResult2").style.display = "block";
         document.getElementById("playerResult1").style.display = "none";
         document.getElementById("playerResult3").style.display = "none";
+        document.getElementById("playerResult4").style.display = "none";
     }
-
-}
+};
 
 //randomise the cards
 function shuffleArray(array) {
@@ -129,7 +136,7 @@ function showCard() {
     let c = cards[count];
     let bgColor = (c.icon == "H" || c.icon == "D") ? 'red' : 'black'; //Get colours for the suits
     let hpos = (count > 0) ? count * 200 + 30 : 30;
-    return '<div class="icard ' + c.suit + '" style="left:' + hpos + 'px;"> <div class="cardtop suit">' + c.num + '<br></div> <div class="cardmid suit"></div>  <div class="cardbottom suit">' + c.num + '<br></div></div>';
+    return '<div class="icard ' + c.suit + '" style="center:' + hpos + 'px;"> <div class="cardtop suit">' + c.num + '<br></div> <div class="cardmid suit"></div>  <div class="cardbottom suit">' + c.num + '<br></div></div>';
 }
 
 //build the cards - loop through the card arrays
