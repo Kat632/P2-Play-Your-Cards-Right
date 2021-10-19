@@ -71,14 +71,13 @@ p {
     display: none;
 }
 
-#playerResult1 {
+#playerResult1, #playerResult2 {
     z-index: 1;
     justify-content: center;
     text-align: center;
     align-items: center;
     display: none;
 }
-
 
 
 /* cards styling */

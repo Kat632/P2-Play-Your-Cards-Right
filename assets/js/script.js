@@ -15,7 +15,7 @@ let myMoney = document.getElementById('quids');
 let myB = document.getElementById('myBet');
 
 //Hide html elements
-document.getElementById("myMiniImg").style.display = "none";
+document.getElementById("playerResult").style.display = "none";
 
 myB.addEventListener('change', checkMe);
 myB.addEventListener('blur', checkMe);
@@ -40,6 +40,7 @@ function gameStart() {
     //Hide and show various elements within the game play
     document.getElementById('cards').innerHTML = "";
     document.getElementById('start').style.display = 'none';
+    document.getElementById('playerResult').style.display = "none";
     document.getElementById('highLow').style.display = 'block';
     document.getElementById('score').style.display = 'block';
 
@@ -94,13 +95,20 @@ function endPlay() {
 }
 
 function displayPrize() {
+    document.getElementById('cards').style.display = "none";
     document.getElementById('playerResult').style.display = "";
-    if (myQuids > 2000) {
+    if (myQuids > 12000) {
         document.getElementById("playerResult1").style.display = "block";
+        document.getElementById("playerResult2").style.display = "none";
+        document.getElementById("playerResult3").style.display = "none";
+    } else if (myQuids > 5000) {
+        document.getElementById("playerResult3").style.display = "block";
+        document.getElementById("playerResult1").style.display = "none";
         document.getElementById("playerResult2").style.display = "none";
     } else if (myQuids > 1000) {
         document.getElementById("playerResult2").style.display = "block";
         document.getElementById("playerResult1").style.display = "none";
+        document.getElementById("playerResult3").style.display = "none";
     }
 
 }
