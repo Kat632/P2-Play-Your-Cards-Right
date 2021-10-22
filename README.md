@@ -349,7 +349,7 @@ GitPod was used to write all code in this repository and pushed via Git to GitHu
 
 ### **Media**
 
-*  
+*  Sound effects obtained from https://www.zapsplat.com
 *	
 *   
 *   
@@ -362,7 +362,7 @@ GitPod was used to write all code in this repository and pushed via Git to GitHu
 
 *	Retro button styling from this Code pen by Brandon Styles https://codepen.io/Brandon-Stoyles/pen/RajYmd
 
-*	
+*	List styling idea from this blog article https://love2dev.com/blog/customize-bulleted-list/
 
 * 
 

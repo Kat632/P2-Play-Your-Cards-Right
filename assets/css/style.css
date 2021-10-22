@@ -12,7 +12,7 @@ body {
 /* --- CREDIT: Image: https://unsplash.com/photos/P787-xixGio --- */
     background-image: url(../images/amanda-jones-P787-xixGio-unsplash.jpg);
     z-index: -1;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: 100%;
     background-position: center;
     display: block;
