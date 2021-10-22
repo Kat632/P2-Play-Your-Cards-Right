@@ -1,3 +1,5 @@
+const defaultCardLayout = document.getElementById("cards-container"); 
+
 let myQuids = 0;
 let count = 0;
 let firstRun = true;
@@ -39,6 +41,7 @@ function gameStart() {
     count = 0;
     myMoney.innerHTML = myQuids; //reset the money at the start of the game
     rules.innerHTML = "Game Started!";
+    cardOutput.innerHTML = defaultCardLayout;
     cardOutput.style.display = ""; //Tried the one below instead, can't see the cards
     //document.getElementById('cards').innerHTML = "";
     //Hide and show various elements within the game play
