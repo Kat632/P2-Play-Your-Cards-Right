@@ -1,4 +1,5 @@
-const defaultCardLayout = document.getElementById("cards-container"); 
+const defaultCardLayout = document.getElementById("cards-container");
+const mySound = document.getElementById("shuffleNoise");
 
 let myQuids = 0;
 let count = 0;
@@ -37,7 +38,7 @@ function checkMe() {
 }
 
 function gameStart() {
-
+    shuffleNoise.play(); 
     myQuids = 1000;
     count = 0;
     myMoney.innerHTML = myQuids; //reset the money at the start of the game
