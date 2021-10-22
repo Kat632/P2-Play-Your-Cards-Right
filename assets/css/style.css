@@ -41,6 +41,7 @@ p {
     font-family: 'Tienne', serif;
     color: #153243;
     font-size: 1.7em;
+    letter-spacing: 5px;
 }
 
 #title-container {
@@ -196,6 +197,78 @@ p {
     background-color: 	#8e4a49;
     color: #fff8e7;
 }
+
+/* footer */
+#footer {
+    background-color: #b4b8ab;
+    border-radius: 25px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    height: 10vh;
+  }
+  
+  #container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+  }
+  
+  #row {
+    width: 100%;
+    margin: 0;
+    justify-content: space-evenly;
+  }
+
+  #contact {
+    font-size: 60%;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+
+  #social {
+    text-align: center;
+  }
+  
+  #social-links {
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  /* social links animation */
+  #social-links li a i {
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding: 5px;
+    border-radius: 50%;
+    text-align: center;
+    color: #153243;
+    background: #b4b8ab;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+  }
+  
+  #social-links li a i:hover {
+    animation-name: social-links-zoom;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes social-links-zoom {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.3);
+    }
+  }
 
 /* Responsive layout @media queries max-width 599px; */
 @media only screen and (max-width: 599px) {
