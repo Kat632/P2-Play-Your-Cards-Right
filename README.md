@@ -1,6 +1,6 @@
 ![Rapier Marketing Logo](assets/images/readme-imgs/rapier_marketing_logo.png)
 
-# Project 2 - Play Your Cards Right, a javaScript game.
+# Project 2 - Play Your Cards Right, a JavaScript game.
 
 ** **
 
@@ -37,13 +37,15 @@ This is the second Project for the **Full Stack Web Development Diploma** from [
 
 Imagine if you will, it's 1986-ish, and an 8 year old girl sitting bored in her bedroom.  She starts flicking through some random books that have been left next to the family computer, the Acorn Electron.  Her dad got all these books when he bought the Acorn second-hand off a mate of his.  No one ever looks at the books though.  They're just there gathering dust.
 
-The little girl opens up one of the books and discovers a whole world of computer manipulation inside.  She doesn't know what any of it means, but by looking at the pictures, she realised that the computer can do all sorts of interesting things that she'd not seen it do before.  So that's how I started coding.
+The little girl opens up one of the books and discovers a whole world of computer manipulation inside.  She doesn't know what any of it means, but by looking at the pictures, she realised that the computer can do all sorts of interesting things that she'd not seen it do before.  THis is how I started coding.
 
-This website is a real-life client project for Clive Pearson of Rapier Marketing Services.  Clive is a marketing consultant specialising in SMEs and micro businesses.
+One of the programs in the book was to code a basic Higher or Lower card game which I can distinctly remember doing.  I have no memory at all of debugging it, so either it worked first time or I sat an went through it line by line looking for mistakes!
 
-This website has been built using the knowledge gained from the HTML, CSS and User Centric Design modules of Code Institute's FullStack Web Development course.
+Incidentally, there was an official Play Your Cards Right game for the Acorn Electron.  [Please see here if you are interested](http://www.acornelectron.co.uk/eug/revs/britannia/Play_Your_Cards_Right_000.html).
 
-## [The live version of the website can be found here](https://kat632.github.io/MS1-Rapier-Marketing/).
+This website has been built using the knowledge gained from the HTML, CSS and JavaScript modules of Code Institute's FullStack Web Development course.
+
+## [The live version of the website can be found here]().
 
 ** **
 

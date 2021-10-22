@@ -1,6 +1,6 @@
 let myQuids = 0;
 let count = 0;
-//let firstRun = true;
+let firstRun = true;
 
 //cards
 let suits = ["spades", "hearts", "clubs", "diams"];
@@ -16,8 +16,8 @@ let myB = document.getElementById('myBet');
 let result = document.getElementById("playerResult");
 
 //Hide html elements
-cardOutput.style.display = "none";
-result.style.display = "none";
+cardOutput.style.display = "none"; //if this is not here, a card displays under the start button
+//result.style.display = "none";  //I don't think I need this.
 
 myB.addEventListener('change', checkMe);
 myB.addEventListener('blur', checkMe);
@@ -37,19 +37,19 @@ function checkMe() {
 function gameStart() {
     myQuids = 1000;
     count = 0;
+    myMoney.innerHTML = myQuids; //reset the money at the start of the game
     rules.innerHTML = "Game Started!";
-    cardOutput.style.display = "block";
-
+    cardOutput.style.display = ""; //Tried the one below instead, can't see the cards
+    //document.getElementById('cards').innerHTML = "";
     //Hide and show various elements within the game play
     document.getElementById('start').style.display = 'none';
-    document.getElementById('playerResult').style.display = "none";
+    result.style.display = "none";
     document.getElementById('highLow').style.display = 'block';
     document.getElementById('score').style.display = 'block';
-
-    //if (firstRun) {
-        buildCards();
-        //firstRun = false;
-    //}
+    if (firstRun) {
+    buildCards();
+    firstRun = false;
+    }
     shuffleArray(cards);
     cardOutput.innerHTML += showCard();
 }
@@ -85,7 +85,7 @@ function hilo(a) {
     myB.max = myQuids;
     myMoney.innerHTML = myQuids;
     if (count > 3) {
-        endPlay()
+        endPlay();
     }
 }
 
@@ -135,7 +135,7 @@ function displayPrize() {
         document.getElementById("playerResult2").style.display = "none";
         document.getElementById("playerResult3").style.display = "none";
         document.getElementById("playerResult4").style.display = "none";  
-    } else if (myQuids < 0) {
+    } else if (myQuids == 0) {
         document.getElementById("playerResult0").style.display = "block";
         document.getElementById("playerResult1").style.display = "none";
         document.getElementById("playerResult2").style.display = "none";
@@ -143,7 +143,7 @@ function displayPrize() {
         document.getElementById("playerResult4").style.display = "none";
         document.getElementById("playerResult5").style.display = "none";       
     }
-};
+}
 
 //randomise the cards
 function shuffleArray(array) {
