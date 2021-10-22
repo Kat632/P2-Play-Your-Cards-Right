@@ -67,6 +67,39 @@ p {
     padding: 20px;
 }
 
+u {
+    text-decoration-color: #8e4a49;
+    font-family: 'Tienne', serif;
+    color: #153243;
+    font-size: 1.7em;
+    letter-spacing: 5px;
+}
+
+#bullets {
+    font-size: 0.7em;
+    list-style-type: none;
+}
+
+.hea:before { 
+    content: '\2665';
+    color: red;
+}
+
+.spa:before {
+    content: '\2660';
+    color: black;
+}
+
+.dia:before { 
+    content: '\2666';
+    color: red;
+}
+
+.clu:before {
+    content: '\2663';
+    color: black;
+}
+
 #highLow, #score {
     display: none;
 }
@@ -247,7 +280,7 @@ p {
     padding: 5px;
     border-radius: 50%;
     text-align: center;
-    color: #153243;
+    color: #04724d;
     background: #b4b8ab;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;

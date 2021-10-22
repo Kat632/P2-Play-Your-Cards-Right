@@ -37,6 +37,7 @@ function checkMe() {
 }
 
 function gameStart() {
+
     myQuids = 1000;
     count = 0;
     myMoney.innerHTML = myQuids; //reset the money at the start of the game
