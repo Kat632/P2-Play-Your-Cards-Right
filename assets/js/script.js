@@ -48,6 +48,7 @@ function gameStart() {
     //Hide and show various elements within the game play
     document.getElementById('start').style.display = 'none';
     result.style.display = "none";
+    document.getElementById('footer').style.display = "none"
     document.getElementById('highLow').style.display = 'block';
     document.getElementById('score').style.display = 'block';
     if (firstRun) {
