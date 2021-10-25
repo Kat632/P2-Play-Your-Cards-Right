@@ -1,5 +1,4 @@
 const defaultCardLayout = document.getElementById("cards-container");
-const mySound = document.getElementById("shuffleNoise");
 
 let myQuids = 0;
 let count = 0;
@@ -22,9 +21,40 @@ let result = document.getElementById("playerResult");
 cardOutput.style.display = "none"; //if this is not here, a card displays under the start button
 //result.style.display = "none";  //I don't think I need this.
 
+//sound elements
+
+let mySound = document.getElementById("shuffleNoise");
+
+let audioOn = document.getElementById('playerOn');
+audioOn.style.display = "none";
+let audioOff = document.getElementById('playerOn');
+
+audioOn.addEventListener('click', toggleSound);
+audioOff.addEventListener('click', toggleSound);
+
+let isMuted = mySound.muted;
+mySound.muted = true;
+
+//sounds
+function toggleSound() {
+    if (isMuted) {
+        document.getElementById('playerOff').style.display = "block";
+        document.getElementById('playerOn').style.display = "none";
+        console.log("no sound");
+    } else {
+        mySound.muted = !mySound.muted;
+        document.getElementById('playerOn').style.display = "block";
+        document.getElementById('playerOff').style.display = "none";
+        console.log("sound");
+    }
+}
+
+
+
+
+
 myB.addEventListener('change', checkMe);
 myB.addEventListener('blur', checkMe);
-
 
 //Check if user is making a bet and check if they are changing it according to the rules.  You can't bet more money than you have
 function checkMe() {
