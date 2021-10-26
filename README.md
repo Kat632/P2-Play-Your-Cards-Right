@@ -20,6 +20,7 @@
 *   [Features](#features)
 *   [Testing](#testing)
 *   [Technologies Used](#technologies-used)
+*	[Resources](#resources)
 *   [Deployment](#deployment)
 *   [Credits](#credits)
 *   [Acknowledgements](#acknowledgements)
@@ -39,7 +40,7 @@ Imagine if you will, it's 1986-ish, and an 8 year old girl sitting bored in her 
 
 The little girl opens up one of the books and discovers a whole world of computer manipulation inside.  She doesn't know what any of it means, but by looking at the pictures, she realised that the computer can do all sorts of interesting things that she'd not seen it do before.  THis is how I started coding.
 
-One of the programs in the book was to code a basic Higher or Lower card game which I can distinctly remember doing.  I have no memory at all of debugging it, so either it worked first time or I sat an went through it line by line looking for mistakes!
+One of the programs in the book was to code a basic Higher or Lower card game which I can distinctly remember doing.  I have no memory at all of debugging it, so either it worked first time or I sat an went through it line by line, character by character looking for mistakes!
 
 Incidentally, there was an official Play Your Cards Right game for the Acorn Electron.  [Please see here if you are interested](http://www.acornelectron.co.uk/eug/revs/britannia/Play_Your_Cards_Right_000.html).
 
@@ -313,6 +314,18 @@ The results were:
 
 ** **
 
+## **Resources**
+
+** **
+
+* In making the toggle sound on/off, this was the resource that finally helped me make it work [Stack Overflow](https://stackoverflow.com/questions/39041960/how-to-unmute-html5-video-with-a-muted-prop)
+
+
+** **
+
+[Return to Table of Contents](#table-of-contents)
+
+** **
 
 ## **Deployment**
 
@@ -350,7 +363,6 @@ GitPod was used to write all code in this repository and pushed via Git to GitHu
 ### **Media**
 
 *  Sound effects obtained from https://www.zapsplat.com
-*	
 *   
 *   
  
@@ -360,7 +372,7 @@ GitPod was used to write all code in this repository and pushed via Git to GitHu
 
 ### **Code Snippets**
 
-*	Retro button styling from this Code pen by Brandon Styles https://codepen.io/Brandon-Stoyles/pen/RajYmd
+*	Retro button styling from this Code pen by Brandon Stoyles https://codepen.io/Brandon-Stoyles/pen/RajYmd
 
 *	List styling idea from this blog article https://love2dev.com/blog/customize-bulleted-list/
 
