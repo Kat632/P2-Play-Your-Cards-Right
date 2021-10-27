@@ -1,3 +1,7 @@
+//Do something better with the "prizes"
+//Card flip noise
+//Work out how to turn the sound back on again
+
 const defaultCardLayout = document.getElementById("cards-container");
 
 let myQuids = 0;
@@ -48,10 +52,6 @@ function toggleSound() {
         console.log("sound");
     }
 }
-
-
-
-
 
 myB.addEventListener('change', checkMe);
 myB.addEventListener('blur', checkMe);

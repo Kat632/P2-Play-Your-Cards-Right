@@ -31,7 +31,7 @@
 
   <main>
     <!--Sound effects obtained from https://www.zapsplat.com-->
-    <audio id="shuffleNoise" src="assets/sounds/zapsplat_leisure_playing_cards_shuffle_001_51044.mp3" />Your browser does not support
+    <audio id="shuffleNoise" src="assets/sounds/zapsplat_leisure_playing_cards_shuffle_001_51044.mp3" type="audio/mp3" />Your browser does not support
       the audio element.
     </audio>
     <button id="playerOff" type="button" onclick="toggleSound()"><i class="fas fa-volume-mute"></i>
@@ -74,45 +74,45 @@
           <!-- CREDIT Wikipedia https://en.wikipedia.org/wiki/Mini#Mark_IV_and_onwards:_1976%E2%80%932000 -->
           <img id="miniImage" src="assets/images/mini_city_e_1985.jpg" alt="A 1985 Mini City car in blue"
             style="width:100%;max-width:300px">
-          <p>Congratulations! You have won a brand new Mini City.</p>
+          <p class="resultsP">Congratulations! You have won a brand new Mini City.</p>
         </div>
 
         <div id="playerResult2">
           <!-- CREDIT Chris Morley, my husband took this photo of a watch belonging to him -->
           <img id="watchImage" src="assets/images/casio_watch_dbcdash60.jpeg" alt="A retro-looking Casio digital watch"
             style="width:100%;max-width:300px">
-          <p>Congratulations! You have won a brand new Casio digital watch.</p>
+          <p class="resultsP">Congratulations! You have won a brand new Casio digital watch.</p>
         </div>
 
         <div id="playerResult3">
           <!-- CREDIT Pexels https://www.pexels.com/photo/suitcase-with-world-map-in-room-7412055/ -->
           <img id="holidayImage" src="assets/images/pexels_monstera_7412055.jpg"
             alt="An image of a suitcase with a world map wrapped around it" style="width:100%;max-width:300px">
-          <p>Congratulations! You have won a cruise around the world!</p>
+          <p class="resultsP">Congratulations! You have won a cruise around the world!</p>
         </div>
 
         <div id="playerResult4">
           <!-- CREDIT Pixabay https://pixabay.com/photos/motorboat-boat-speed-power-water-425053/ -->
           <img id="speedboat" src="assets/images/motorboat-gaad8d2b65_640.jpg"
             alt="An image of a speedboat, gliding across the water" style="width:100%;max-width:300px">
-          <p>Congratulations! You have won a speedboat!</p>
+          <p class="resultsP">Congratulations! You have won a speedboat!</p>
         </div>
 
         <div id="playerResult5">
           <!-- CREDIT Pixabay https://pixabay.com/photos/algebra-analyse-architect-1238600/ -->
           <img id="fountainPen" src="assets/images/algebra-gb4e74bc57_640.jpg"
             alt="An image of a fountain pen, a calculator and a plastic ruler" style="width:100%;max-width:300px">
-          <p>Congratulations! You have won our consolation prize: a stylish fountain pen set.</p>
+          <p class="resultsP">Congratulations! You have won our consolation prize: a stylish fountain pen set.</p>
         </div>
 
         <div id="playerResult0">
-          <p>Sorry, you've gone bust.</p>
+          <p class="resultsP">Sorry, you've gone bust.</p>
         </div>
       </div>
 
       <div id="score">
         <div>
-          <p>Total £<span id="quids">1000</span> Place your bet:</p>
+          <p id="placeYour">Total £<span id="quids">1000</span> Place your bet:</p>
           <input type="number" id="myBet" value="0" min="1" max="100">
         </div>
       </div>
