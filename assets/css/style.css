@@ -344,13 +344,10 @@ u {
         font-size: 1.3em;
       }
 
-    /* .icard {} */ /*I don't know what to do with this either */
-
     .btn {
         font-size: 0.9rem;
+        margin: 0.2rem;
     }
-
-    /* #btnstart {} */ /*I don't know what to do with this */
 
     #placeYour {
         margin-top: 10px;
@@ -364,7 +361,81 @@ u {
     }
 }
 
-/* @media only screen and (min-width: 281px) and (max-width: 320px) */
+@media only screen and (min-width: 281px) and (max-width: 320px) {
+/*iPhone 4 */
+#playerOn, #playerOff {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+p, u {
+    font-size: 1.2em;
+    letter-spacing: 3px;
+    text-align: left;
+    margin-left: -10px;
+    margin-left: -20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#contact {
+    text-align: center;
+}
+
+.icard {
+    height: 170px;
+    width: 110px;
+  }
+  
+  .cardtop {
+    font-size: 1.3em;
+  }
+  
+  .cardmid {
+    font-size: 4em;
+    top: 47px;
+    left: 47px;
+  }
+  
+  .cardbottom {
+    font-size: 1.3em;
+  }
+
+.btn {
+    font-size: 0.9rem;
+    margin: 0.2rem;
+}
+
+#placeYour, #pYourB {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.resultsP {
+    margin-left: 22px;
+    font-size: 1em;
+    /*letter-spacing: 3px; */
+}
+
+footer p {
+    text-align: center;
+}
+
+footer ul {
+    padding-left: 0px;
+}
+
+#playerResult0, #playerResult1, #playerResult2, #playerResult3, #playerResult4, #playerResult5 {
+    overflow: hidden;
+    min-height: 300px;
+}
+}
 
 /* iPhone 6/7/8 */
 @media only screen and (min-width: 321px) and (max-width: 375px) {
