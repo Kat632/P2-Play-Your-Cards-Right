@@ -75,7 +75,7 @@ function gameStart() {
     rules.innerHTML = "Game Started!";
     cardOutput.innerHTML = defaultCardLayout;
     cardOutput.style.display = ""; //Tried the one below instead, can't see the cards
-    //document.getElementById('cards').innerHTML = "";
+    document.getElementById('cards').innerHTML = "";
     //Hide and show various elements within the game play
     document.getElementById('start').style.display = 'none';
     result.style.display = "none";
