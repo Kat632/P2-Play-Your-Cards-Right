@@ -31,9 +31,13 @@
 
   <main>
     <!--Sound effects obtained from https://www.zapsplat.com-->
-    <audio id="shuffleNoise" src="assets/sounds/zapsplat_leisure_playing_cards_shuffle_001_51044.mp3" type="audio/mp3" />Your browser does not support
+    <audio id="shuffleNoise" src="assets/sounds/zapsplat_leisure_playing_cards_shuffle_001_51044.mp3"
+      type="audio/mp3">Your browser does not support
       the audio element.
     </audio>
+    <audio id="flipNoise"
+      src="assets/sounds/zapsplat_leisure_trading_card_or_playing_card_single_turn_over_on_table_009_68337.mp3"
+      type="audio/mp3">Your brower does not support the audio element.</audio>
     <button id="playerOff" type="button" onclick="toggleSound()"><i class="fas fa-volume-mute"></i>
       Click to Toggle Sound
     </button>
@@ -114,7 +118,7 @@
       <div id="score">
         <div>
           <p id="placeYour">Total £<span id="quids">1000</span></p>
-            <p id="pYourB">Place your bet:</p>
+          <p id="pYourB">Place your bet:</p>
           <input type="number" id="myBet" value="0" min="1" max="100">
         </div>
       </div>

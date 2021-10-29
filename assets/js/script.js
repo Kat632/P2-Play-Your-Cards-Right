@@ -26,8 +26,8 @@ cardOutput.style.display = "none"; //if this is not here, a card displays under 
 //result.style.display = "none";  //I don't think I need this.
 
 //sound elements
-
 let mySound = document.getElementById("shuffleNoise");
+let mySound2 = document.getElementById("flipNoise");
 
 let audioOn = document.getElementById('playerOn');
 audioOn.style.display = "none";
@@ -37,16 +37,19 @@ audioOn.addEventListener('click', toggleSound);
 audioOff.addEventListener('click', toggleSound);
 
 let isMuted = mySound.muted;
+let isMuted2 = mySound2.muted;
 mySound.muted = true;
+mySound2.muted = true;
 
-//sounds
+//toggle sounds
 function toggleSound() {
-    if (isMuted) {
+    if (isMuted && isMuted2) {
         document.getElementById('playerOff').style.display = "block";
         document.getElementById('playerOn').style.display = "none";
         console.log("no sound");
     } else {
         mySound.muted = !mySound.muted;
+        mySound2.muted = !mySound2.muted;
         document.getElementById('playerOn').style.display = "block";
         document.getElementById('playerOff').style.display = "none";
         console.log("sound");
@@ -92,6 +95,7 @@ function gameStart() {
 }
 
 function hilo(a) {
+    flipNoise.play();
     //calculate winner
     let win = false;
     let oldCard = cards[count].cardValue;
