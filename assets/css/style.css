@@ -349,9 +349,9 @@ u {
         margin: 0.2rem;
     }
 
-    #placeYour {
+    #placeYour, #pYourB {
         margin-top: 10px;
-        margin-left: 10px;
+        text-align: center;
     }
 
     .resultsP {
@@ -362,7 +362,7 @@ u {
 }
 
 @media only screen and (min-width: 281px) and (max-width: 320px) {
-/*iPhone 4 */
+/*iPhone 4/5 */
 #playerOn, #playerOff {
     display: block;
     margin-left: auto;
@@ -437,34 +437,182 @@ footer ul {
 }
 }
 
-/* iPhone 6/7/8 */
+/* Galaxy Note 3, Blackberry z30, Moto G4 */
 @media only screen and (min-width: 321px) and (max-width: 375px) {
-/* .icard {} */ /*I don't know what to do with this either */
-}
-
-
-@media only screen and (min-width: 376px) and (max-width: 540px) {
-
-}
-
-/* Galaxy Fold landscape */
-@media only screen and (min-width: 541px) and (max-width: 1023px) {
     #playerOn, #playerOff {
         display: block;
         margin-left: auto;
         margin-right: auto;
         font-size: 12px;
     }
-
+    
     h1 {
         font-size: 1.5em;
     }
-
+    
     p, u {
-        font-size: 1.2em;
+        font-size: 1.6em;
         letter-spacing: 3px;
         text-align: left;
         margin-left: -10px;
+        margin-left: -20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    #contact {
+        text-align: center;
+    }
+    
+    .icard {
+        height: 170px;
+        width: 110px;
+      }
+      
+      .cardtop {
+        font-size: 1.3em;
+      }
+      
+      .cardmid {
+        font-size: 4em;
+        top: 47px;
+        left: 47px;
+      }
+      
+      .cardbottom {
+        font-size: 1.3em;
+      }
+    
+    .btn {
+        font-size: 0.9rem;
+        margin: 0.2rem;
+    }
+    
+    #placeYour, #pYourB {
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .resultsP {
+        margin-left: 22px;
+        font-size: 1em;
+        /*letter-spacing: 3px; */
+    }
+    
+    footer p {
+        text-align: center;
+        padding-left: 10px;
+    }
+    
+    footer ul {
+        padding-left: 15px;
+    }
+    
+    #playerResult0, #playerResult1, #playerResult2, #playerResult3, #playerResult4, #playerResult5 {
+        overflow: hidden;
+        min-height: 300px;
+    }
+
+}
+
+/* Nokia N9, Nexus 5X, LG Optimus */
+@media only screen and (min-width: 376px) and (max-width: 540px) {
+    #playerOn, #playerOff {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 16px;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    p, u {
+        font-size: 1.6em;
+        letter-spacing: 3px;
+        text-align: left;
+        margin-left: -10px;
+        margin-left: -20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    #contact {
+        text-align: center;
+    }
+    
+    .icard {
+        height: 170px;
+        width: 110px;
+      }
+      
+      .cardtop {
+        font-size: 1.3em;
+      }
+      
+      .cardmid {
+        font-size: 4em;
+        top: 47px;
+        left: 47px;
+      }
+      
+      .cardbottom {
+        font-size: 1.3em;
+      }
+    
+    .btn {
+        font-size: 0.9rem;
+        margin: 0.2rem;
+    }
+    
+    #placeYour, #pYourB {
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .resultsP {
+        margin-left: 22px;
+        font-size: 1em;
+        /*letter-spacing: 3px; */
+    }
+    
+    footer p {
+        text-align: center;
+        padding-left: 10px;
+    }
+    
+    footer ul {
+        padding-left: 15px;
+    }
+    
+    #playerResult0, #playerResult1, #playerResult2, #playerResult3, #playerResult4, #playerResult5 {
+        overflow: hidden;
+        min-height: 300px;
+    }
+}
+
+@media only screen and (min-width: 541px) and (max-width: 652px) {
+    #playerOn, #playerOff {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    p, u {
+        font-size: 1.3em;
+        line-height: 90%;
+        letter-spacing: 3px;
+        text-align: left;
+        margin-left: -10px;
+        margin-left: -20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .icard {
@@ -473,30 +621,27 @@ footer ul {
       }
       
       .cardtop {
-        font-size: 1.2em;
+        font-size: 1.3em;
       }
       
       .cardmid {
         font-size: 4em;
         top: 47px;
-        left: 28px;
+        left: 45px;
       }
       
       .cardbottom {
-        font-size: 1.2em;
+        font-size: 1.3em;
       }
-
-    /* .icard {} */ /*I don't know what to do with this either */
 
     .btn {
         font-size: 0.9rem;
     }
 
-    /* #btnstart {} */ /*I don't know what to do with this */
-
-    #placeYour {
+    #placeYour, #pYourB {
         margin-top: 10px;
         margin-left: 10px;
+        text-align: center;
     }
 
     .resultsP {
@@ -508,14 +653,121 @@ footer ul {
     #bullets {
         line-height: 0.9em;
     }
+
+    footer p {
+        text-align: center;
+        padding-left: 10px;
+    }
+    
+    footer ul {
+        padding-left: 15px;
+    }
+    
+    #playerResult0, #playerResult1, #playerResult2, #playerResult3, #playerResult4, #playerResult5 {
+        overflow: hidden;
+        min-height: 300px;
+    }
+}
+@media only screen and (min-width: 653px) and (max-width: 767px) {
+    #playerOn, #playerOff {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    p, u {
+        font-size: 1.3em;
+        line-height: 95%;
+        letter-spacing: 3px;
+        text-align: left;
+        margin-left: -20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .icard {
+        height: 170px;
+        width: 110px;
+      }
+      
+      .cardtop {
+        font-size: 1.3em;
+      }
+      
+      .cardmid {
+        font-size: 4em;
+        top: 47px;
+        left: 45px;
+      }
+      
+      .cardbottom {
+        font-size: 1.3em;
+      }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+
+    #placeYour, #pYourB {
+        margin-top: 10px;
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    .resultsP {
+        margin-left: 22px;
+        font-size: 1.2em;
+        letter-spacing: 3px;
+    }
+
+    #bullets {
+        line-height: 0.9em;
+    }
+
+    footer p {
+        text-align: center;
+        padding-left: 10px;
+    }
+    
+    footer ul {
+        padding-left: 15px;
+    }
+    
+    #playerResult0, #playerResult1, #playerResult2, #playerResult3, #playerResult4, #playerResult5 {
+        overflow: hidden;
+        min-height: 300px;
+    }
 }
 
-@media only screen and (min-width: 1023px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #rules {
+        padding: 40px 20px 20px 20px;
+    }
+    
+    u {
+        font-size: 2.1em;
+    }
+    
+    #bullets {
+        font-size: 0.9em;
+    }
+}
 
-@media only screen and (min-width: 1025px) 
-
-
-/* Responsive layout @media queries max-width 599px; */
-@media only screen and (max-width: 599px) {
-
+@media only screen and (min-width: 1024px) {
+    #rules {
+        padding: 40px 20px 20px 20px;
+    }
+    
+    u {
+        font-size: 2.1em;
+    }
+    
+    #bullets {
+        font-size: 0.9em;
+    }
 }

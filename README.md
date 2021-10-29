@@ -146,10 +146,16 @@ Please see Design section below.
 
 ### **Typography**
 
-The website uses two fonts throughout.  The headers throughout the website are using the **Cabin** font while the main text is using the **Raleway** font.  Both fonts are from [Google Fonts](https://fonts.google.com/).  The fonts were chosen for their simplicity and because I am aware that sans serif fonts are better for dyslexic readers.  My information about choosing an accessible font came from [this article at Bdadyslexia](https://www.bdadyslexia.org.uk/advice/employers/creating-a-dyslexia-friendly-workplace/dyslexia-friendly-style-guide).
+The website uses two fonts throughout.  The header and buttons throughout the website are using the [**Press2P Start**](https://fonts.google.com/specimen/Press+Start+2P) font while the main text is using the [**Tienne**](https://fonts.google.com/specimen/Tienne#standard-styles) font.  Both fonts are from [Google Fonts](https://fonts.google.com/).  
+
+I chose **Press 2P Start** because I had used it previously in the [**Code Institute**](https://codeinstitute.net/) Retro Hackathon in August 2021.  I like its retro 1980s feel, even though it is based on the Namco arcade game fonts of the time and therefore nothing to do with the Acorn Electron.
+
+I chose **Tienne** because it reminds me of the original font from the opening screen of the British TV Show Play Your Cards Right.  [This is a link to a Google image search of the TV show](https://tinyurl.com/nxxx6unj).
 
 
 ### **Imagery**
+
+
 
 
 
@@ -308,6 +314,8 @@ The results were:
 
 *   [TinyPNG](https://tinypng.com/) - Used for all images to cut back the size of .png files.
 
+*	[TinyURL](https://tinyurl.com/app/) - Used to shorten a few URLs in this readme document.
+
 ** **
 
 [Return to Table of Contents](#table-of-contents)
@@ -318,7 +326,13 @@ The results were:
 
 ** **
 
-* In making the toggle sound on/off, this was the resource that finally helped me make it work [Stack Overflow](https://stackoverflow.com/questions/39041960/how-to-unmute-html5-video-with-a-muted-prop)
+*	The basic structure of this project was built using this course on [Udemy](https://www.udemy.com/course/javascript-card-game/).  I did not feel confident enough about my javaScript skills to build what I wanted to build from scratch after I finished the lessons leading up to this project.  However, I feel the project I have built is sufficiently different from the one on Udemy to be able to submit it.  I have styled the project, added the functions for the sound and for the prizes by myself.  As a result, I feel like my understanding of javaScript has greatly improved.
+
+*	In making the toggle sound on/off, this was the resource that finally helped me make it work [Stack Overflow](https://stackoverflow.com/questions/39041960/how-to-unmute-html5-video-with-a-muted-prop)
+
+*	W3 Schools
+
+*	
 
 
 ** **
