@@ -72,6 +72,7 @@ function gameStart() {
     myQuids = 1000;
     count = 0;
     myMoney.innerHTML = myQuids; //reset the money at the start of the game
+    myB.value = 0;
     rules.innerHTML = "Game Started!";
     cardOutput.innerHTML = defaultCardLayout;
     cardOutput.style.display = ""; //Tried the one below instead, can't see the cards
