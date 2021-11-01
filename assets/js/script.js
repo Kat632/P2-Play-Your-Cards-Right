@@ -1,6 +1,6 @@
 //Do something better with the "prizes"
-//Card flip noise
 //Work out how to turn the sound back on again
+//Media queries for the cards!
 
 const defaultCardLayout = document.getElementById("cards-container");
 
@@ -78,7 +78,7 @@ function gameStart() {
     myB.value = 0;
     rules.innerHTML = "Game Started!";
     cardOutput.innerHTML = defaultCardLayout;
-    cardOutput.style.display = ""; //Tried the one below instead, can't see the cards
+    cardOutput.style.display = "";
     document.getElementById('cards').innerHTML = "";
     //Hide and show various elements within the game play
     document.getElementById('start').style.display = 'none';
@@ -202,7 +202,7 @@ function showCard() {
     let c = cards[count];
     let bgColor = (c.icon == "H" || c.icon == "D") ? 'red' : 'black'; //Get colours for the suits
     let hpos = (count > 0) ? count * 200 + 30 : 30;
-    return '<div class="icard ' + c.suit + '" style="left:' + hpos + 'px;"> <div class="cardtop suit">' + c.num + '<br></div> <div class="cardmid suit"></div>  <div class="cardbottom suit">' + c.num + '<br></div></div>';
+    return '<div class="icard ' + c.suit + '" style="left:' + 0 + 'px;"> <div class="cardtop suit">' + c.num + '<br></div> <div class="cardmid suit"></div>  <div class="cardbottom suit">' + c.num + '<br></div></div>';
 }
 
 //build the cards - loop through the card arrays
