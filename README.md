@@ -4,7 +4,7 @@
 
 | ![Play Your Cards Right Game](assets/images/readme-imgs/pycr_amiresponsive.jpg) |
 |:--:|
-| <b>The Play Your Cards Right Game displayed on different devices.</b>|
+| <b>Play Your Cards Right Game displayed on different devices.</b>|
 | <b>Created using Amiresponsive. Please see [Technologies Used](#technologies-used) for details.</b>|
 
 ## [The live version of the website can be found here](https://kat632.github.io/P2-Play-Your-Cards-Right/).
@@ -36,32 +36,29 @@ This is the second Project for the **Full Stack Web Development Diploma** from [
 
 **Background to the project and why I decided to build this particular game**
 
-Imagine if you will, it's 1986-ish, and an 8 year old girl sitting bored in her bedroom.  She starts flicking through some random books that have been left next to the family computer, the Acorn Electron.  Her dad got all these books when he bought the Acorn second-hand off a mate of his.  No one ever looks at the books though.  They're just there gathering dust.
+Imagine if you will, it's 1986-ish, and an 8 year old girl sitting bored in her bedroom.  She starts flicking through some random books that have been left next to the family computer, the Acorn Electron.  Her dad got all the books when he bought the Acorn second-hand off his mate.  No one ever looks at the books though.  They're just there gathering dust.
 
-The little girl opens up one of the books and discovers a whole world of computer manipulation inside.  She doesn't know what any of it means, but by looking at the pictures, she realised that the computer can do all sorts of interesting things that she'd not seen it do before.  THis is how I started coding.
+The little girl opens up one of the books and discovers a whole world of computer manipulation inside.  She doesn't know what any of it means, but by looking at the pictures, she realised that the computer can do all sorts of interesting things that she'd not seen it do before.  This is how I started coding.
 
 One of the programs in the book was to code a basic Higher or Lower card game which I can distinctly remember doing.  I have no memory at all of debugging it, so either it worked first time or I sat an went through it line by line, character by character looking for mistakes!
 
-Incidentally, there was an official Play Your Cards Right game for the Acorn Electron.  [Please see here if you are interested](http://www.acornelectron.co.uk/eug/revs/britannia/Play_Your_Cards_Right_000.html).
+Incidentally, there was an official Play Your Cards Right game for the Acorn Electron.  [Please see here.](http://www.acornelectron.co.uk/eug/revs/britannia/Play_Your_Cards_Right_000.html).
 
-This website has been built using the knowledge gained from the HTML, CSS and JavaScript modules of Code Institute's FullStack Web Development course.
+| ![Me, at 8 years old in my brownie uniform](assets/images/readme-imgs/meatbrownies1986.jpeg) |
+|:--:|
+| <b>8-year old me at Brownies in about 1986.  I'm the one with the glasses and blonde hair.</b>|
+
+This website has been built using the knowledge gained from the HTML, CSS and JavaScript modules of Code Institute's FullStack Web Development course.  Please see [Resources](#resources) section for further information.
 
 ** **
 
-| ![Rapier Marketing planning.html page displayed on different devices.](assets/images/readme-imgs/responsive_rapier_planning.JPG) |
+| ![Screenshot of the game area displaying four cards](assets/images/readme-imgs/responsive_rapier_planning.JPG) |
 |:--:|
-| <b>Rapier Marketing planning.html page displayed on different devices.</b>|
-| <b>Created using Amiresponsive. Please see [Technologies Used](#technologies-used) for details.</b>|
+| <b>Screenshot of the game play.</b>|
 
-| ![Rapier Marketing tactics.html page displayed on different devices.](assets/images/readme-imgs/responsive_rapier_tactics.JPG) |
+| ![Screenshot displaying one of the prizes](assets/images/readme-imgs/responsive_rapier_tactics.JPG) |
 |:--:|
-| <b>Rapier Marketing tactics.html page displayed on different devices.</b>|
-| <b>Created using Amiresponsive. Please see [Technologies Used](#technologies-used) for details.</b>|
-
-| ![Rapier Marketing contact.html page displayed on different devices.](assets/images/readme-imgs/responsive_rapier_contact.JPG) |
-|:--:|
-| <b>Rapier Marketing contact.html page displayed on different devices.</b>|
-| <b>Created using Amiresponsive. Please see [Technologies Used](#technologies-used) for details.</b>|
+| <b>Screenshot displaying one of the prizes.</b>|
 
 ** **
 
