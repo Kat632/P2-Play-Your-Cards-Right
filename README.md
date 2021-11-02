@@ -1,5 +1,3 @@
-![Rapier Marketing Logo](assets/images/readme-imgs/rapier_marketing_logo.png)
-
 # Project 2 - Play Your Cards Right, a JavaScript game.
 
 ** **
@@ -8,6 +6,8 @@
 |:--:|
 | <b>Rapier Marketing Home page displayed on different devices.</b>|
 | <b>Created using Amiresponsive. Please see [Technologies Used](#technologies-used) for details.</b>|
+
+## [The live version of the website can be found here](https://kat632.github.io/P2-Play-Your-Cards-Right/).
 
 ** **
 ## **Table of Contents**
@@ -46,8 +46,6 @@ Incidentally, there was an official Play Your Cards Right game for the Acorn Ele
 
 This website has been built using the knowledge gained from the HTML, CSS and JavaScript modules of Code Institute's FullStack Web Development course.
 
-## [The live version of the website can be found here]().
-
 ** **
 
 | ![Rapier Marketing planning.html page displayed on different devices.](assets/images/readme-imgs/responsive_rapier_planning.JPG) |
@@ -82,26 +80,21 @@ To ensure the UX is simple and user-friendly, by providing easy navigation throu
 
 ### **User stories**
 
-**Visitor Goals**
+**User Goals**
 
-*	As a website visitor, I want to easily understand the main purpose of the website and learn more about the organisation.
+*	The site's users want to understand how to play the game.
+*	The site’s users want to play an online game that has elements of chance.
+*	The site's users want to play a game that can potentially have a different outcome every time they play it.
 
-*	As a website visitor, I want to be able to easily navigate through the site to find content.
+**Site Owner Goals**
 
-*	As a website visitor, I want to be able to view the website clearly on any mobile device.
+*	The site’s goal is to provide a challenging game with the ability to "win" money and prizes, just like on the old TV programme.
 
-*	As a website visitor, I want to know what services are provided by the organisation.
+Potential features to include:
 
-*	As a website visitor, I would like to see examples of previous projects undertaken by the organisation.
-
-**Client Goals**
-
-*	To have a more visually pleasing website than the current version [https://rapiergroup.co.uk/](https://rapiergroup.co.uk/).
-
-*	To minimise the risk of information overload, by condensing the text into a more readable layout.
-
-* 	The website must represent the client and their business in a professional manner.  No visual gimmicks or massive menus.
-
+*	Betting functionality.
+*	The ability to go bust.
+*	The ability to win a prize based on the final score.
 
 **2. Scope**
 
@@ -109,19 +102,27 @@ To ensure the UX is simple and user-friendly, by providing easy navigation throu
 
 *	To fine-tune and implement the skills I have learnt so far on my course.
 
+*	To provide a visually pleasing retro game environment to entertain the user.
+
 
 **3. Structure**
 
-I designed this website to create a more modern and eye-catching version of the original website.  See above for link to original website.  The original website was built by Clive Pearson using a Wordpress template.  My version of the website utilises modern internet protocols to create a more aethetically pleasing experience for the user.
+I designed this website to have a retro look since, as stated previously, it is based loosely around the old 1980s TV show and computer game.
+
+I wanted the layout to be visually simple.
 
 
 **4. Skeleton**
 
 *	Wireframes - please see below in the Design section.
 
-*	Fixed footer for the purpose of a strong and constantly present Call To Action.
+*	Fixed footer for the purpose of always displaying the author of the game to the user.
 
-*	Home page, Planning page, Tactics page, Contact page.
+*	Fixed header for the purpose of displaying the name of the game to the user.
+
+*	Play area in the middle of the screen that displays the various elements of the game.
+
+*	Sound toggle button and game play buttons are always in the same place.
 
 
 **5. Surface**
@@ -138,10 +139,16 @@ Please see Design section below.
 
 ** **
 
-
 ### **Colour Scheme**
 
+I used [**Coolors**](https://coolors.co/) to generate a suitably retro-looking colour scheme and then modified it for my own purposes.  The background colour #B4B8AB reminds me of the plastic on the CRT monitors that were around at the time.  The pink colour #8E4A49, used on one of the buttons, reminds me of the carpet in the bathroom(!) at my parents' house during the 1980s.
 
+I used EightShapes Contrast Grid to test the foreground and background colour combinations for minimum contrast compliance.
+
+| ![EightShapes Contrast Grid displaying the colours in the game](assets/images/readme-imgs/pycr_eightshapes_contrast_grid.png) |
+|:--:|
+| <b>EightShapes Contrast Grid displaying the colours in the game.</b>|
+| <b>Please see [Technologies Used](#technologies-used) for details.</b>|
 
 
 ### **Typography**
@@ -155,30 +162,42 @@ I chose **Tienne** because it reminds me of the original font from the opening s
 
 ### **Imagery**
 
+*	The background is by [Amanda Jones](https://unsplash.com/@amandagraphc) on Unsplash.  I chose it because it represents the game.
 
+*	The fountain pen is by [Shutterbug75](https://pixabay.com/users/shutterbug75-2077322/) on Pixabay.  I chose it because the consolation prizes on 1980s British TV shows were generally something rubbish, like a clock or a pen.  See this [Metro](https://metro.co.uk/2015/03/10/bullys-special-prize-why-game-shows-were-better-in-the-70s-and-80s-5050086/) article I used for inspiration.
 
+*	The Casio watch photo was taken by my husband, [Chris Morley](https://www.linkedin.com/in/chris-morley-11620815/) and it is from his collection of 1980s technology.  A digital watch was considered the height of geeky sophistication at the time and are still considered a quintessential part of 1980s design today.
 
+*	The speedboat image was taken by [Anthony Formin](https://unsplash.com/@aginsbrook) and I chose it because it is an old-looking speedboat with a family in it.  Speedboats were often given away as prizes on game shows in the 1980s.  It was always a source of amusement to my family that Barry from Wigan would be parking a speedboat outside his two-bedroomed terraced house.  I felt that this paticular boat represented the look and feel of family-oriented game shows of the time.  I originally had a fancier boat, but it felt too modern.
+
+*	The cruise photo is by [Alonso Reyes](https://unsplash.com/@alonsoreyes) on Unsplash.  I chose to have a world cruise as one of the prizes because people did win luxury holidays on the quiz shows of the time.
+
+* The image of the Mini car is from [Wikipedia](https://en.wikipedia.org/wiki/Mini).  I chose it because I watched the very first episode of [Play Your Cards Right on YouTube](https://www.youtube.com/watch?v=t4jW_OGwXus) and the star prize was a Mini.
 
 
 ### **Wireframes**
 
+| ![Play Your Cards Right wireframes in a mobile portrait orientation.](assets/images/readme-imgs/pycr_mobile_view_portrait.png) |
+|:--:|
+| <b>Play Your Cards Right wireframes in a mobile portrait orientation.</b>|
+| <b>Created using Balsamiq. Please see [Technologies Used](#technologies-used) for details.</b>|
 
+| ![Play Your Cards Right wireframes in a tablet landscape orientation.](assets/images/readme-imgs/pycr_tablet_view_landscape.png) |
+|:--:|
+| <b>Play Your Cards Right wireframes in a tablet landscape orientation.</b>|
+| <b>Created using Balsamiq. Please see [Technologies Used](#technologies-used) for details.</b>|
+
+| ![Play Your Cards Right wireframes viewed on a computer screen.](assets/images/readme-imgs/pycr_computer_view.png) |
+|:--:|
+| <b>Play Your Cards Right wireframes viewed on a computer screen.</b>|
+| <b>Created using Balsamiq. Please see [Technologies Used](#technologies-used) for details.</b>|
 
 
 ### **Differences to Design**
 
-*   
+*   I decided to leave the footer at the bottom of the page during game play.  It looks neater and it provides the user with the name and social links of the author of the game at all times.
 
-*   
-
-*   
-
-*   
-
-*   
-
-*	
-
+*   I was going to have the cards overlapping on smaller screen sizes, but in the end I decided it was going to be quicker to let them just be side by side, like on all other screen sizes.
 
 ### **Limitations**
 
@@ -243,16 +262,16 @@ CSS validated using [The W3C CSS Validation Service](http://jigsaw.w3.org/css-va
 
 ## **Code Validation Issues**
 
-When validating the tactics.html page, an issue was revealed in that you cannot have a h3 element as a descendant of a th element.  Therefore I had to remove the h3 element and I have restyled **th.Rtable-cell** to mimic a h3 element.
+When validating the the code, an issue was revealed in that you cannot have a type=""
 
 ## **Peer Code Review**
 
 At the suggestion of my mentor I submitted my code for Peer Code Review in the **Code Institute** Slack channel.  Please see the names of the reviewers below in [Acknowledgements](#acknowledgements).
 
 The results were:
-*	A bug on the 404 page whereby the Rapier Group text in the top left of the page does not link back to the home page - Fixed.
-*	A suggestion to left-align the text in the list container on planning.html, so that the bullets aren't floating separately to the text - Fixed and it looks so much better now.
-*	Consider adding more space below the table on tactics.html as it was slightly overlapped by the footer element - Fixed.
+*	
+*	
+*	
 
 ## **User Testing**
 
@@ -326,13 +345,13 @@ The results were:
 
 ** **
 
-*	The basic structure of this project was built using this course on [Udemy](https://www.udemy.com/course/javascript-card-game/).  I did not feel confident enough about my javaScript skills to build what I wanted to build from scratch after I finished the lessons leading up to this project.  However, I feel the project I have built is sufficiently different from the one on Udemy to be able to submit it.  I have styled the project, added the functions for the sound and for the prizes by myself.  As a result, I feel like my understanding of javaScript has greatly improved.
+*	The basic structure of this project was built using this course on [Udemy](https://www.udemy.com/course/javascript-card-game/).  I did not feel confident enough about my JavaScript skills to build what I wanted to build from scratch after I finished the lessons leading up to this project.  However, I feel the project I have built is sufficiently different from the one on Udemy to be able to submit it.  I have styled the project, added the functions for the sound and for the prizes by myself.  As a result, I feel like my understanding of JavaScript has greatly improved through doing the Udemy course to build the basic structure of the game and through building up my project into a visually attractive and fun game to play.
 
 *	In making the toggle sound on/off, this was the resource that finally helped me make it work [Stack Overflow](https://stackoverflow.com/questions/39041960/how-to-unmute-html5-video-with-a-muted-prop)
 
 *	W3 Schools
 
-*	
+*	https://developer.mozilla.org/en-US/
 
 
 ** **
@@ -376,9 +395,9 @@ GitPod was used to write all code in this repository and pushed via Git to GitHu
 
 ### **Media**
 
-*  Sound effects obtained from https://www.zapsplat.com
+*  Sound effects obtained from [Zapsplat] https://www.zapsplat.com
 *   
-*   
+*  Images from Pexels, Unsplash, PIxabay and Wikipedia.  Please see .... for details of the individual images.
  
 ### **Content**
 
@@ -391,18 +410,6 @@ GitPod was used to write all code in this repository and pushed via Git to GitHu
 *	List styling idea from this blog article https://love2dev.com/blog/customize-bulleted-list/
 
 * 
-
-*	
-
-*	
-
-
-### **Readme**
-
-*	I would like to mention the other readme examples I used to help me create the structure of my own readme:
-	-	[John Doyle](https://github.com/Aramantos/MS1-World-Wide-Web)
-	-	[Patrik Österljung](https://github.com/oljung/portfolio-project-one)
-	-	[Marcin Kli](https://github.com/marcin-kli/MP1/blob/Milestone-Projects/README.md)
 	  
 ** **
 
@@ -419,7 +426,7 @@ I would like to thank:
 
 *	My mentor [Adegbenga Adeye](https://github.com/deye9) for his enthusiasm, support, knowledge and excellent suggestions.
 
-*	
+*	Sean from **Code Institute** Tutor Support who helped me with the media queries for the cards.	
 
 *   
 

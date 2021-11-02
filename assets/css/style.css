@@ -29,14 +29,13 @@ body {
 }
 
 #play-area {
-    height: 100vh;
+    height: auto;
     background-color: #b4b8ab;
     border-radius: 25px;
     justify-content: center;
     text-align: center;
     align-items: center;
     margin: 20px;
-    min-height: 400px;
 }
 
 h1 {
@@ -440,6 +439,7 @@ li {
         margin-left: 22px;
         font-size: 1em;
         /*letter-spacing: 3px; */
+        text-align: center;
     }
 
     footer p {
@@ -682,8 +682,8 @@ li {
 
     .cardmid {
         font-size: 4em;
-        top: 47px;
-        left: 45px;
+        top: 28px;
+        left: 32px;
     }
 
     .cardbottom {
@@ -787,8 +787,8 @@ li {
     }
 
     .resultsP {
-        margin-left: 22px;
-        font-size: 1.2em;
+        text-align: center;
+        font-size: 1.1em;
         letter-spacing: 3px;
     }
 
@@ -841,20 +841,5 @@ li {
 
     #bullets {
         font-size: 0.9em;
-    }
-}
-
-/* TUTOR CODE */
-
-
-
-@media screen and (max-width: 490px) {
-    .icard {
-        height: 80px;
-        width: 50px;
-    }
-
-    .cardmid {
-        font-size: 0em;
     }
 }
