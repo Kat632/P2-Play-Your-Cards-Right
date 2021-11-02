@@ -214,11 +214,16 @@ I chose **Tienne** because it reminds me of the original font from the opening s
 ** **
 
 
+Interactivity for users.
+Betting feature.
+
 *   
 
 **Responsive features**
 
+*	Responsive on all device sizes.
 
+*	Media queries to change the size of the cards depending on the screen size of the device on which the game is being played.
 
 **Features Left to Implement**
 
@@ -247,7 +252,7 @@ The site has been tested across multiple non-virtual devices, including iPhone 8
 
 ## **Performance testing**
 
-All pages pass through [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) with no major concerns, except for the empty values in the aria-required labels on the form fields.  These have been changed to aria-required="true".
+All pages pass through [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) with a score of 94 for performance and no major concerns.
 
 ## **Accessibility Testing**
 

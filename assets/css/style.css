@@ -74,8 +74,9 @@ p {
     padding: 20px;
 }
 
-u {
-    text-decoration-color: #8e4a49;
+h2 {
+    display: inline;
+    border-bottom: 3px solid #8e4a49;
     font-family: 'Tienne', serif;
     color: #153243;
     font-size: 1.7em;
@@ -136,8 +137,6 @@ u {
 #cards {
     margin-top: 30px;
     height: 240px;
-    /*justify-content: left;*/
-    /*Don't think I need this */
     text-align: center;
 }
 
