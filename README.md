@@ -2,9 +2,9 @@
 
 ** **
 
-| ![Home page - index.html](assets/images/readme-imgs/responsive_rapier_home.JPG) |
+| ![Play Your Cards Right Game](assets/images/readme-imgs/pycr_amiresponsive.jpg) |
 |:--:|
-| <b>Rapier Marketing Home page displayed on different devices.</b>|
+| <b>The Play Your Cards Right Game displayed on different devices.</b>|
 | <b>Created using Amiresponsive. Please see [Technologies Used](#technologies-used) for details.</b>|
 
 ## [The live version of the website can be found here](https://kat632.github.io/P2-Play-Your-Cards-Right/).
@@ -263,11 +263,14 @@ Accessibility testing using [WebAim Wave - Web Acessibility Evaluation Tool](htt
 Testing has been carried out using the following web services:
 
 HTML on all pages validated using [The W3C Markup Validation Service](https://validator.w3.org/)
+
 CSS validated using [The W3C CSS Validation Service](http://jigsaw.w3.org/css-validator/)
+
+JavaScript code has been validated using [JSHint](https://jshint.com/)
 
 ## **Code Validation Issues**
 
-When validating the the code, an issue was revealed in that you cannot have a type=""
+When validating the HTML code, an issue was revealed in that you cannot have a type="" in an audio tag.  This has now been removed.
 
 ## **Peer Code Review**
 
@@ -314,13 +317,15 @@ The results were:
 ** **
 
 
-*	HTML - This project uses HTML as the main language used to complete the structure of the website.
+*	[HTML](https://en.wikipedia.org/wiki/HTML) - This project uses HTML as the main language used to complete the structure of the website.
 
-*	CSS - This project uses custom written CSS to style the website.
+*	[CSS](https://www.w3.org/Style/CSS/Overview.en.html) - This project uses custom written CSS to style the website.
+
+*   [JavaScript](https://www.javascript.com/) - This project uses JavaScript to dynamically updated the content of the web page based on the interactions of the user.
 
 *	[Font Awesome](https://fontawesome.com/) - Font awesome Icons are used for the What We Do information boxes on the home page and the social media links contained in the Footer section of the website.
 
-*   [Google Fonts](https://fonts.google.com/) - Google fonts are used throughout the project to import the Libre Baskerville and Cabin fonts.
+*   [Google Fonts](https://fonts.google.com/) - Google fonts are used throughout the project to import the fonts.
 
 *   [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) - Google Chrome's built in developer tools are used to inspect page elements and help debug issues with the site layout and test different CSS styles.
 
@@ -334,11 +339,9 @@ The results were:
 
 *   [AmIReponsive](http://ami.responsivedesign.is/) - This was used to make the multi device mockup in the README.
 
-*   [Adobe PDF Convertor](https://www.adobe.com/uk/acrobat/online/convert-pdf.html) - to convert the pdfs in the image gallery to jpg.
-
 *   [TinyPNG](https://tinypng.com/) - Used for all images to cut back the size of .png files.
 
-*	[TinyURL](https://tinyurl.com/app/) - Used to shorten a few URLs in this readme document.
+*	[TinyURL](https://tinyurl.com/app/) - Used to shorten a URL in this readme document.
 
 ** **
 

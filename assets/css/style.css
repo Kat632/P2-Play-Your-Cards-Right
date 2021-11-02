@@ -330,7 +330,7 @@ li {
     }
 
     p,
-    u {
+    h2 {
         font-size: 1.2em;
         letter-spacing: 3px;
         text-align: left;
@@ -372,6 +372,14 @@ li {
         font-size: 1.2em;
         letter-spacing: 3px;
     }
+
+    #footer p {
+        text-align: center;
+    }
+
+    #footer i {
+        display: inline-block;
+    }
 }
 
 @media only screen and (min-width: 281px) and (max-width: 320px) {
@@ -390,17 +398,20 @@ li {
     }
 
     p,
-    u {
+    h2 {
         font-size: 1.2em;
         letter-spacing: 3px;
         text-align: left;
-        margin-left: -10px;
         margin-left: -20px;
         margin-top: 5px;
         margin-bottom: 5px;
     }
 
     #contact {
+        text-align: center;
+    }
+
+    #footer p {
         text-align: center;
     }
 
@@ -437,7 +448,6 @@ li {
     .resultsP {
         margin-left: 22px;
         font-size: 1em;
-        /*letter-spacing: 3px; */
         text-align: center;
     }
 
@@ -476,11 +486,10 @@ li {
     }
 
     p,
-    u {
+    h2 {
         font-size: 1.6em;
         letter-spacing: 3px;
         text-align: left;
-        margin-left: -10px;
         margin-left: -20px;
         margin-top: 5px;
         margin-bottom: 5px;
@@ -574,11 +583,10 @@ li {
     }
 
     p,
-    u {
+    h2 {
         font-size: 1.6em;
         letter-spacing: 3px;
         text-align: left;
-        margin-left: -10px;
         margin-left: -20px;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -659,12 +667,11 @@ li {
     }
 
     p,
-    u {
+    h2 {
         font-size: 1.3em;
         line-height: 90%;
         letter-spacing: 3px;
         text-align: left;
-        margin-left: -10px;
         margin-left: -20px;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -745,7 +752,7 @@ li {
     }
 
     p,
-    u {
+    h2 {
         font-size: 1.3em;
         line-height: 95%;
         letter-spacing: 3px;
@@ -820,7 +827,7 @@ li {
         padding: 40px 20px 20px 20px;
     }
 
-    u {
+    h2 {
         font-size: 2.1em;
     }
 
@@ -834,7 +841,7 @@ li {
         padding: 40px 20px 20px 20px;
     }
 
-    u {
+    h2 {
         font-size: 2.1em;
     }
 
