@@ -210,11 +210,7 @@ I chose **Tienne** because it reminds me of the original font from the opening s
 
 ** **
 
-
-Interactivity for users.
-Betting feature.
-
-*   
+*   Interactivity for users: the ability to toggle the sound and the ability to place a bet. 
 
 **Responsive features**
 
@@ -268,6 +264,8 @@ JavaScript code has been validated using [JSHint](https://jshint.com/)
 ## **Code Validation Issues**
 
 When validating the HTML code, an issue was revealed in that you cannot have a type="" in an audio tag.  This has now been removed.
+
+During Accessibility Testing, I discovered that the betting input requires a label tag.  Issue fixed by wrapping "Place Your Bet:" with label tags.
 
 ## **Peer Code Review**
 
@@ -425,11 +423,7 @@ I would like to thank:
 
 *	Sean from **Code Institute** Tutor Support who helped me with the media queries for the cards.	
 
-*   
-
-*	
-
-*	
+*   The **Code Institute** Slack Community, specifically [Dave Horrocks](), [Helena Johansson]() and [Andrew Dempsey]().
 
 ** **
 
