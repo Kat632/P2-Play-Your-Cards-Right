@@ -52,11 +52,15 @@ This website has been built using the knowledge gained from the HTML, CSS and Ja
 
 ** **
 
-| ![Screenshot of the game area displaying four cards](assets/images/readme-imgs/responsive_rapier_planning.JPG) |
+| ![Screenshot of the website](assets/images/readme-imgs/pycr_start.png) |
+|:--:|
+| <b>Screenshot of the website.</b>|
+
+| ![Screenshot of the game area displaying four cards](assets/images/readme-imgs/pycr_4cards.png) |
 |:--:|
 | <b>Screenshot of the game play.</b>|
 
-| ![Screenshot displaying one of the prizes](assets/images/readme-imgs/responsive_rapier_tactics.JPG) |
+| ![Screenshot displaying one of the prizes](assets/images/readme-imgs/pycr_gameover.png) 
 |:--:|
 | <b>Screenshot displaying one of the prizes.</b>|
 

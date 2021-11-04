@@ -108,6 +108,14 @@ h2 {
     color: black;
 }
 
+input[type=number] {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 14px;
+    -webkit-box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.4);
+  }
+
 #highLow,
 #score {
     display: none;
@@ -260,7 +268,7 @@ h2 {
 
 #container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 5px;
 }
 
