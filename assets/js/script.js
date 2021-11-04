@@ -31,7 +31,7 @@ let mySound2 = document.getElementById("flipNoise");
 
 let audioOn = document.getElementById('playerOn');
 audioOn.style.display = "none";
-let audioOff = document.getElementById('playerOn');
+let audioOff = document.getElementById('playerOff');
 
 audioOn.addEventListener('click', toggleSound);
 audioOff.addEventListener('click', toggleSound);
@@ -43,15 +43,15 @@ mySound2.muted = true;
 
 //toggle sounds
 function toggleSound() {
-    if (isMuted && isMuted2) {
-        document.getElementById('playerOff').style.display = "block";
-        document.getElementById('playerOn').style.display = "none";
+    mySound.muted = !mySound.muted; //toggles to true if false, toggles to false if true
+    mySound2.muted = !mySound2.muted;
+    if (mySound.muted) { //check if sound is muted (both are the same, so no need to check both)
+        audioOff.style.display = "block";
+        audioOn.style.display = "none";
         console.log("no sound");
-    } else {
-        mySound.muted = !mySound.muted;
-        mySound2.muted = !mySound2.muted;
-        document.getElementById('playerOn').style.display = "block";
-        document.getElementById('playerOff').style.display = "none";
+    } else { //if something isn't true, it is false. No need for else if
+        audioOn.style.display = "block";
+        audioOff.style.display = "none";
         console.log("sound");
     }
 }
@@ -59,7 +59,7 @@ function toggleSound() {
 myB.addEventListener('change', checkMe);
 myB.addEventListener('blur', checkMe);
 
-//Check if user is making a bet and check if they are changing it according to the rules.  You can't bet more money than you have
+//Check if user is making a bet and check if they are changing it according to the rules.  You can't bet more money than you have.
 function checkMe() {
     if (this.value > myQuids) {
         this.value = myQuids;
@@ -69,6 +69,7 @@ function checkMe() {
     }
     rules.innerHTML = "Bet changed to £" + this.value;
 }
+
 
 function gameStart() {
     shuffleNoise.play(); 

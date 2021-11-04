@@ -282,25 +282,17 @@ The results were:
 
 **Visitor Goals**
 
-> As a website visitor, I want to easily understand the main purpose of the website and learn more about the organisation.
+> The site's users want to understand how to play the game.
 >
->> The name of the business and what the company does is evident on the home page.  The different sections on the home page provide more opportunity to learn about the organisation.
+>> When the website loads the rules of the game are clearly visible under the heading How To Play.  If the user already knows the rules, the Start Game button is near the top of the page so that they do not have to scroll in order to find it.
 
-> As a website visitor, I want to be able to easily navigate through the site to find content.
+> The site’s users want to play an online game that has elements of chance.
 >
->> Each page has a navigation bar at the top allowing the user to navigate between the pages.  Since the home page is longer than the others, a back-to-top button has been included to allow the user to quickly get back to the top of the page where the navigation bar is.
+>> The ability to place a bet enhances the element of chance.  The ability to potentially run out of money and not be able to finish the game also provides an element of chance.
 
-> As a website visitor, I want to be able to view the website clearly on any mobile device.
+> The site's users want to play a game that can potentially have a different outcome every time they play it.
 >
->> The website is responsive at different screen widths.  For a description of the responsive features, please see [Features](#features).
-
-> As a website visitor, I want to know what services are provided by the organisation.
->
->> The Planning and Tactics pages provide information about the services provided by Rapier Marketing.
-
-> As a website visitor, I would like to see examples of previous projects undertaken by the organisation.
->
->> The Past Projects and Testimonials sections on the home page provide information about what the organisation has previously undertaken.
+>> If a user manages to win money, there are multiple prizes that can be won based on how much money they have at the end of the game.  This is an incentive for a user to play the game multiple times to see how much money they can win and what prize they get.
 
 
 ** **
@@ -320,7 +312,7 @@ The results were:
 
 *   [JavaScript](https://www.javascript.com/) - This project uses JavaScript to dynamically updated the content of the web page based on the interactions of the user.
 
-*	[Font Awesome](https://fontawesome.com/) - Font awesome Icons are used for the What We Do information boxes on the home page and the social media links contained in the Footer section of the website.
+*	[Font Awesome](https://fontawesome.com/) - Font Awesome icons are used for sound button and the social media links contained in the Footer section of the website.
 
 *   [Google Fonts](https://fonts.google.com/) - Google fonts are used throughout the project to import the fonts.
 
@@ -350,13 +342,13 @@ The results were:
 
 ** **
 
-*	The basic structure of this project was built using this course on [Udemy](https://www.udemy.com/course/javascript-card-game/).  I did not feel confident enough about my JavaScript skills to build what I wanted to build from scratch after I finished the lessons leading up to this project.  However, I feel the project I have built is sufficiently different from the one on Udemy to be able to submit it.  I have styled the project, added the functions for the sound and for the prizes by myself.  As a result, I feel like my understanding of JavaScript has greatly improved through doing the Udemy course to build the basic structure of the game and through building up my project into a visually attractive and fun game to play.
+*	The basic structure of this project was built using this course on [Udemy](https://www.udemy.com/course/javascript-card-game/).  I did not feel confident enough about my JavaScript skills to build what I wanted to build from scratch after I finished the lessons leading up to this project.  I also spent a further 5 days doing Codecademy's [Introduction to JavaScript](https://www.codecademy.com/learn/introduction-to-javascript) course.
+
+I feel the project I have built is sufficiently different from the one on Udemy to be able to submit it.  I have styled the project, made it responsive, added the functions for the sound and for the prizes.  As a result, I feel like my understanding of JavaScript has greatly improved through through building up my project into a visually attractive and fun game to play.
 
 *	In making the toggle sound on/off, this was the resource that finally helped me make it work [Stack Overflow](https://stackoverflow.com/questions/39041960/how-to-unmute-html5-video-with-a-muted-prop)
 
-*	W3 Schools
-
-*	https://developer.mozilla.org/en-US/
+*	[W3 Schools](https://www.w3schools.com/) and [MDN Web Docs](https://developer.mozilla.org/en-US/) as general reference guides throughout the project.
 
 
 ** **
@@ -373,7 +365,7 @@ GitPod was used to write all code in this repository and pushed via Git to GitHu
 
 **Using Git Hub Pages**
 
-*   Navigate to the gitHub [Repository]():
+*   Navigate to the gitHub [Repository](https://github.com/Kat632/P2-Play-Your-Cards-Right):
 *	Click the 'Settings' Tab.
 *	Scroll down to the GitHub Pages heading.
 *	Click the Save button.
@@ -381,7 +373,7 @@ GitPod was used to write all code in this repository and pushed via Git to GitHu
 
 **Run Locally**
 
-*   Navigate to the GitHub Repository:
+*   Navigate to the GitHub [Repository](https://github.com/Kat632/P2-Play-Your-Cards-Right):
 *	Click the Code drop down menu.
 *	Either Download the ZIP file, unpackage locally and open with IDE (This route ends here) OR Copy Git URL from the HTTPS dialogue box.
 *	Open your developement editor of choice and open a terminal window in a directory of your choice.
@@ -402,7 +394,7 @@ GitPod was used to write all code in this repository and pushed via Git to GitHu
 
 *  Sound effects obtained from [Zapsplat] https://www.zapsplat.com
 *   
-*  Images from Pexels, Unsplash, PIxabay and Wikipedia.  Please see .... for details of the individual images.
+*  Images from Unsplash, Pixabay and Wikipedia.  Please see the [**Design**](#design) Section for details of the individual images.
  
 ### **Content**
 

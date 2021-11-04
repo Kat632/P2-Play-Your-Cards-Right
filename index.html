@@ -16,9 +16,7 @@
 </head>
 
 <body>
-
-  <!--Navigation-->
-
+ <!--Header-->
   <header>
     <div id="title-container">
       <div id="title">
@@ -36,10 +34,10 @@
     </audio>
     <audio id="flipNoise"
       src="assets/sounds/zapsplat_leisure_trading_card_or_playing_card_single_turn_over_on_table_009_68337.mp3">Your brower does not support the audio element.</audio>
-    <button id="playerOff" type="button" onclick="toggleSound()"><i class="fas fa-volume-mute"></i>
+    <button id="playerOff" type="button"><i class="fas fa-volume-mute"></i>
       Click to Toggle Sound
     </button>
-    <button id="playerOn" type="button" onclick="toggleSound()"><i class="fas fa-volume-up"></i>
+    <button id="playerOn" type="button"><i class="fas fa-volume-up"></i>
       Click to Toggle Sound
     </button>
 
@@ -117,6 +115,7 @@
         <div>
           <p id="placeYour">Total £<span id="quids">1000</span></p>
           <p id="pYourB">Place your bet:</p>
+          <label for="myBet"></label>
           <input type="number" id="myBet" value="0" min="1" max="100">
         </div>
       </div>
