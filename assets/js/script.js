@@ -94,7 +94,12 @@ function gameStart() {
     cardOutput.innerHTML += showCard();
 }
 
+//You must place a bet
 function hilo(a) {
+    if (myB.value == 0) {
+        alert("Please place a bet to continue!");
+        return;
+    } else {
     flipNoise.play();
     //calculate winner
     let win = false;
@@ -128,6 +133,7 @@ function hilo(a) {
     if (count > 3) {
         endPlay();
     }
+}
 }
 
 function endPlay() {
