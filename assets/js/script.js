@@ -1,6 +1,3 @@
-//Do something better with the "prizes"
-//Work out how to turn the sound back on again
-//You must place a bet to start the game.
 
 const defaultCardLayout = document.getElementById("cards-container");
 
@@ -22,8 +19,7 @@ let myB = document.getElementById('myBet');
 let result = document.getElementById("playerResult");
 
 //Hide html elements
-cardOutput.style.display = "none"; //if this is not here, a card displays under the start button
-//result.style.display = "none";  //I don't think I need this.
+cardOutput.style.display = "none";
 
 //sound elements
 let mySound = document.getElementById("shuffleNoise");
@@ -43,13 +39,13 @@ mySound2.muted = true;
 
 //toggle sounds
 function toggleSound() {
-    mySound.muted = !mySound.muted; //toggles to true if false, toggles to false if true
+    mySound.muted = !mySound.muted;
     mySound2.muted = !mySound2.muted;
-    if (mySound.muted) { //check if sound is muted (both are the same, so no need to check both)
+    if (mySound.muted) {
         audioOff.style.display = "block";
         audioOn.style.display = "none";
         console.log("no sound");
-    } else { //if something isn't true, it is false. No need for else if
+    } else {
         audioOn.style.display = "block";
         audioOff.style.display = "none";
         console.log("sound");
@@ -94,8 +90,8 @@ function gameStart() {
     cardOutput.innerHTML += showCard();
 }
 
-//You must place a bet
 function hilo(a) {
+    //You must place a bet
     if (myB.value == 0) {
         alert("Please place a bet to continue!");
         return;
@@ -145,7 +141,7 @@ function endPlay() {
 }
 
 function displayPrize() {
-    
+    //Display Prizes
     document.getElementById('cards').style.display = "none";
     document.getElementById('playerResult').style.display = "";
     if (myQuids >= 12000) {
@@ -206,8 +202,6 @@ function shuffleArray(array) {
 //display the cards to the user
 function showCard() {
     let c = cards[count];
-    let bgColor = (c.icon == "H" || c.icon == "D") ? 'red' : 'black'; //Get colours for the suits
-    let hpos = (count > 0) ? count * 200 + 30 : 30;
     return '<div class="icard ' + c.suit + '" style="left:' + 0 + 'px;"> <div class="cardtop suit">' + c.num + '<br></div> <div class="cardmid suit"></div>  <div class="cardbottom suit">' + c.num + '<br></div></div>';
 }
 

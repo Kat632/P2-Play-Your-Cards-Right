@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A game based on the TV show Play Your Cards Right">
   <meta name="keywords" content="game, javascript game, card game, higher or lower game">
-  <!--CREDIT: Favicon https://favicon.io/-->
+  <meta name="author" content="Katherine Biggs">
+  <!-- CREDIT: Favicon https://favicon.io/ -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
@@ -16,7 +17,7 @@
 </head>
 
 <body>
- <!--Header-->
+ <!-- Header -->
   <header>
     <div id="title-container">
       <div id="title">
@@ -25,10 +26,10 @@
     </div>
   </header>
 
-  <!--Main-->
+  <!-- Main -->
 
   <main>
-    <!--Sound effects obtained from https://www.zapsplat.com-->
+    <!-- Sound effects obtained from https://www.zapsplat.com -->
     <audio id="shuffleNoise" src="assets/sounds/zapsplat_leisure_playing_cards_shuffle_001_51044.mp3">Your browser does not support
       the audio element.
     </audio>
@@ -41,13 +42,15 @@
       Click to Toggle Sound
     </button>
 
-    <!--Start Button-->
+    <!-- Start Button -->
     <div id="start">
       <button id="btnstart" type="button" onclick="gameStart()" class="btn">Start Game</button>
     </div>
 
+    <!-- Game area -->
     <div id="play-area">
-
+      
+      <!-- Rules -->
       <div id="rules">
         <h2>How to Play</h2>
         <ul id="bullets">
@@ -70,6 +73,7 @@
         </ul>
       </div>
 
+      <!-- Player Results and Prizes -->
       <div id="playerResult">
         <div id="playerResult1">
           <!-- CREDIT Wikipedia https://en.wikipedia.org/wiki/Mini#Mark_IV_and_onwards:_1976%E2%80%932000 -->
@@ -111,6 +115,7 @@
         </div>
       </div>
 
+      <!-- Score -->
       <div id="score">
         <div>
           <p id="placeYour">Total £<span id="quids">1000</span></p>
@@ -119,6 +124,7 @@
         </div>
       </div>
 
+      <!-- Cards -->
       <div id="cards-container">
         <div id="cards">
           <div class="icard hearts">
@@ -129,6 +135,7 @@
         </div>
       </div>
 
+      <!-- High Low Buttons -->
       <div id="highLow">
         <button id="btnhigh" type="button" onclick="hilo('high')" class="btn">High</button>
         <button id="btnlow" type="button" onclick="hilo('low')" class="btn">Low</button>
@@ -138,7 +145,7 @@
   </main>
 
 
-  <!--Footer-->
+  <!-- Footer -->
   <footer id="footer">
     <div id="container">
       <div id="row">
@@ -159,6 +166,8 @@
       </div>
     </div>
   </footer>
+
+  <!-- JavaScript -->
   <script src="assets/js/script.js"></script>
   <!-- font awesome script -->
   <script src="https://kit.fontawesome.com/b3341ec0dd.js" crossorigin="anonymous"></script>

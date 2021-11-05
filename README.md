@@ -214,16 +214,17 @@ I chose **Tienne** because it reminds me of the original font from the opening s
 
 ** **
 
-*   Interactivity for users: the ability to toggle the sound and the ability to place a bet. 
+*   The ability for the user to toggle the sound.
+*   The ability for the user to place a bet.
+*   The ability for the user to choose higher or lower.
+*   The ability for the user to increase their money.
+*   The ability for the user to win a prize.
 
 **Responsive features**
 
 *	Responsive on all device sizes.
 
-*	Media queries to change the size of the cards depending on the screen size of the device on which the game is being played.
-
-**Features Left to Implement**
-
+*	Media queries to change the size of the cards depending on the screen size of the device on which the game is being played.  There are three different sizes of playing card, depending on the user's screen size.
 
 
 ** **
@@ -346,11 +347,21 @@ The results were:
 
 *	The basic structure of this project was built using this course on [Udemy](https://www.udemy.com/course/javascript-card-game/).  I did not feel confident enough about my JavaScript skills to build what I wanted to build from scratch after I finished the lessons leading up to this project.  I also spent a further 5 days doing Codecademy's [Introduction to JavaScript](https://www.codecademy.com/learn/introduction-to-javascript) course.
 
-I feel the project I have built is sufficiently different from the one on Udemy to be able to submit it.  I have styled the project, made it responsive, added the functions for the sound and for the prizes.  As a result, I feel like my understanding of JavaScript has greatly improved through through building up my project into a visually attractive and fun game to play.
+*   I feel the project I have built is sufficiently different from the one on Udemy to be able to submit it.  I have:
+
+  1. Styled the project.
+  2. Made it responsive.
+  3. Added the sounds and the ability to turn them on and off.
+  4. Added the ability to win prizes.
+  5. Added the necessity to place a bet for the prizes.
+
+*   As a result, I feel like my understanding of JavaScript has greatly improved through through building up my project into a visually attractive and fun game to play.
 
 *	In making the toggle sound on/off, this was the resource that finally helped me make it work [Stack Overflow](https://stackoverflow.com/questions/39041960/how-to-unmute-html5-video-with-a-muted-prop)
 
 *	[W3 Schools](https://www.w3schools.com/) and [MDN Web Docs](https://developer.mozilla.org/en-US/) as general reference guides throughout the project.
+
+*   [CSS Tricks](https://css-tricks.com/) for learning about transitions and animations.
 
 
 ** **
