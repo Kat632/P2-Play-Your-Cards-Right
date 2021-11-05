@@ -40,7 +40,7 @@ Imagine if you will, it's 1986-ish, and an 8 year old girl sitting bored in her 
 
 The little girl opens up one of the books and discovers a whole world of computer manipulation inside.  She doesn't know what any of it means, but by looking at the pictures, she realised that the computer can do all sorts of interesting things that she'd not seen it do before.  This is how I started coding.
 
-One of the programs in the book was to code a basic Higher or Lower card game which I can distinctly remember doing.  I have no memory at all of debugging it, so either it worked first time or I sat an went through it line by line, character by character looking for mistakes!
+One of the programs in the book was to code a basic Higher or Lower card game which I can distinctly remember doing.  I have no memory at all of debugging it, so either it worked first time or I sat and went through it line by line, character by character looking for mistakes!
 
 Incidentally, there was an official Play Your Cards Right game for the Acorn Electron.  [Please see here.](http://www.acornelectron.co.uk/eug/revs/britannia/Play_Your_Cards_Right_000.html).
 
