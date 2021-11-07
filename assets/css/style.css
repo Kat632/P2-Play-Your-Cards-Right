@@ -26,10 +26,9 @@ body {
 #playerOff {
     margin-left: 20px;
     font-size: 18px;
-    font-weight: bolder;
     font-family: 'Tienne', serif;
     border-radius: 25px;
-    color: #b4b8ab;
+    color: #fff8e7;
     background-color: #04724d;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;

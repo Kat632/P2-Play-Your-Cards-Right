@@ -272,6 +272,8 @@ When validating the HTML code, an issue was revealed in that you cannot have a t
 
 During Accessibility Testing, I discovered that the betting input requires a label tag.  Issue fixed by wrapping "Place Your Bet:" with label tags.
 
+Also during Accessibility Testing, I noticed that the font colour on my sound button wasn't enough of a contrast, so it has been changed to #fff8e7 which is the same as all of the other buttons.
+
 ## **Peer Code Review**
 
 At the suggestion of my mentor I submitted my code for Peer Code Review in the **Code Institute** Slack channel.  Please see the names of the reviewers below in [Acknowledgements](#acknowledgements).
