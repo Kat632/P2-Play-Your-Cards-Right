@@ -54,15 +54,15 @@ This website has been built using the knowledge gained from the HTML, CSS and Ja
 
 | ![Screenshot of the website](assets/images/readme-imgs/pycr_start.png) |
 |:--:|
-| <b>Screenshot of the website.</b>|
+| <b>Screenshot of the website viewed on a laptop screen.</b>|
 
 | ![Screenshot of the game area displaying four cards](assets/images/readme-imgs/pycr_4cards.png) |
 |:--:|
-| <b>Screenshot of the game play.</b>|
+| <b>Screenshot of the game play viewed on a laptop screen.</b>|
 
 | ![Screenshot displaying one of the prizes](assets/images/readme-imgs/pycr_gameover.png) 
 |:--:|
-| <b>Screenshot displaying one of the prizes.</b>|
+| <b>Screenshot displaying one of the prizes viewed on a laptop screen.</b>|
 
 ** **
 
@@ -77,14 +77,14 @@ This website has been built using the knowledge gained from the HTML, CSS and Ja
 
 **1. Strategy**
 
-To ensure the UX is simple and user-friendly, by providing easy navigation through all pages on the site.
+To ensure the UX is simple and user-friendly.
 
 ### **User stories**
 
 **User Goals**
 
 *	The site's users want to understand how to play the game.
-*	The site’s users want to play an online game that has elements of chance.
+*	The site’s users want to play an online game that has elements of risk and chance.
 *	The site's users want to play a game that can potentially have a different outcome every time they play it.
 
 **Site Owner Goals**
@@ -108,7 +108,7 @@ Potential features to include:
 
 **3. Structure**
 
-I designed this website to have a retro look since, as stated previously, it is based loosely around the old 1980s TV show and computer game.
+I designed this website to have a retro look since, as stated previously, it is meant to be a mildly humourous nod to the old 1980s TV show and computer game of the same name.
 
 I wanted the layout to be visually simple.
 
@@ -117,9 +117,9 @@ I wanted the layout to be visually simple.
 
 *	Wireframes - please see below in the Design section.
 
-*	Fixed footer for the purpose of always displaying the author of the game to the user.
+*	Always present footer for the purpose of always displaying the author of the game to the user.
 
-*	Fixed header for the purpose of displaying the name of the game to the user.
+*	Always present header for the purpose of displaying the name of the game to the user.
 
 *	Play area in the middle of the screen that displays the various elements of the game.
 
@@ -202,7 +202,7 @@ I chose **Tienne** because it reminds me of the original font from the opening s
 
 ### **Limitations**
 
-
+I would have like to have styled the prize images.  I found some great CSS techniques for making photos look retro and for fun frames, but in the end I had to make a decision about what was necessary and what was just a nice to have.  Unfortunately the image styling fell into the nice to have category.
 
 ** **
 
@@ -250,7 +250,7 @@ The site has been tested across multiple non-virtual devices, including iPhone 8
 
 ## **Performance testing**
 
-All pages pass through [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) with a score of 94 for performance and no major concerns.
+All pages pass through [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) with a score of 95 for performance and no major concerns.
 
 ## **Accessibility Testing**
 
@@ -272,16 +272,14 @@ When validating the HTML code, an issue was revealed in that you cannot have a t
 
 During Accessibility Testing, I discovered that the betting input requires a label tag.  Issue fixed by wrapping "Place Your Bet:" with label tags.
 
-Also during Accessibility Testing, I noticed that the font colour on my sound button wasn't enough of a contrast, so it has been changed to #fff8e7 which is the same as all of the other buttons.
+Also during Accessibility Testing, I noticed that the font colour on my sound button wasn't enough of a contrast to the background colour, so it has been changed to #fff8e7 which is the same as all of the other buttons.  Similarly, the social icons in the footer needed to be changed to #153243 to offer more of a contrast for visually impaired users.
 
 ## **Peer Code Review**
 
 At the suggestion of my mentor I submitted my code for Peer Code Review in the **Code Institute** Slack channel.  Please see the names of the reviewers below in [Acknowledgements](#acknowledgements).
 
 The results were:
-*	
-*	
-*	
+* "Looks great Kat, the audio toggle is working now I see.  Looks grand on my phone and laptop, no bugs that I can find..."
 
 ## **User Testing**
 
@@ -291,9 +289,9 @@ The results were:
 >
 >> When the website loads the rules of the game are clearly visible under the heading How To Play.  If the user already knows the rules, the Start Game button is near the top of the page so that they do not have to scroll in order to find it.
 
-> The site’s users want to play an online game that has elements of chance.
+> The site’s users want to play an online game that has elements of risk and chance.
 >
->> The ability to place a bet enhances the element of chance.  The ability to potentially run out of money and not be able to finish the game also provides an element of chance.
+>> The ability to place a bet enhances the element of risk and chance.  The ability to potentially run out of money and not be able to finish the game also provides an element of chance.
 
 > The site's users want to play a game that can potentially have a different outcome every time they play it.
 >
@@ -420,8 +418,6 @@ GitPod was used to write all code in this repository and pushed via Git to GitHu
 *	Retro button styling from this Code pen by Brandon Stoyles https://codepen.io/Brandon-Stoyles/pen/RajYmd
 
 *	List styling idea from this blog article https://love2dev.com/blog/customize-bulleted-list/
-
-* 
 	  
 ** **
 
@@ -440,7 +436,9 @@ I would like to thank:
 
 *	Sean from **Code Institute** Tutor Support who helped me with the media queries for the cards.	
 
-*   The **Code Institute** Slack Community, specifically [Dave Horrocks](), [Helena Johansson]() and [Andrew Dempsey]().
+*  The **Code Institute** Slack Community, specifically [Dave Horrocks](https://github.com/DaveyJH), [Helena Johansson](https://github.com/Odden69) and [Andrew Dempsey](https://github.com/andrewdempsey2018).
+
+*  Peer Code Review from Andrew Dempsey (see above).
 
 ** **
 

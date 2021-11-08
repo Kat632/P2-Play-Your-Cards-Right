@@ -36,7 +36,8 @@ body {
     -o-transition: all 0.35s ease-in-out;
 }
 
-#playerOn:hover, #playerOff:hover {
+#playerOn:hover,
+#playerOff:hover {
     animation-name: player-links-zoom;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -140,7 +141,14 @@ input[type=number] {
     border-radius: 14px;
     -webkit-box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.4);
     box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.4);
-  }
+}
+
+#myBet {
+    font-family: 'Tienne', serif;
+    color: #153243;
+    font-size: 1.7em;
+    letter-spacing: 5px;
+}
 
 /* Score */
 #highLow,
@@ -161,7 +169,7 @@ input[type=number] {
     justify-content: center;
     text-align: center;
     align-items: center;
-    display: none; 
+    display: none;
 }
 
 /* cards styling */
@@ -401,7 +409,7 @@ input[type=number] {
     }
 
     #placeYour,
-    #pYourB {
+    #myBet {
         margin-top: 10px;
         text-align: center;
     }
@@ -471,7 +479,7 @@ input[type=number] {
     }
 
     #placeYour,
-    #pYourB {
+    #myBet {
         margin-top: 10px;
         text-align: center;
     }
@@ -561,7 +569,7 @@ input[type=number] {
     }
 
     #placeYour,
-    #pYourB {
+    #myBet {
         margin-top: 10px;
         text-align: center;
     }
@@ -648,7 +656,7 @@ input[type=number] {
     }
 
     #placeYour,
-    #pYourB {
+    #myBet {
         margin-top: 10px;
         text-align: center;
     }
@@ -728,7 +736,7 @@ input[type=number] {
     }
 
     #placeYour,
-    #pYourB {
+    #myBet {
         margin-top: 10px;
         margin-left: 10px;
         text-align: center;
@@ -813,7 +821,7 @@ input[type=number] {
     }
 
     #placeYour,
-    #pYourB {
+    #myBet {
         margin-top: 10px;
         margin-left: 10px;
         text-align: center;
@@ -901,9 +909,9 @@ input[type=number] {
     .icard {
         height: 80px;
         width: 50px;
-        }
-    
+    }
+
     .cardmid {
         font-size: 0em;
-        }
     }
+}

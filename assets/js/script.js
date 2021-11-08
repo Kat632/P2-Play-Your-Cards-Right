@@ -1,4 +1,3 @@
-
 const defaultCardLayout = document.getElementById("cards-container");
 
 let myQuids = 0;
@@ -68,7 +67,7 @@ function checkMe() {
 
 
 function gameStart() {
-    shuffleNoise.play(); 
+    shuffleNoise.play();
     myQuids = 1000;
     count = 0;
     myMoney.innerHTML = myQuids; //reset the money at the start of the game
@@ -83,8 +82,8 @@ function gameStart() {
     document.getElementById('highLow').style.display = 'block';
     document.getElementById('score').style.display = 'block';
     if (firstRun) {
-    buildCards();
-    firstRun = false;
+        buildCards();
+        firstRun = false;
     }
     shuffleArray(cards);
     cardOutput.innerHTML += showCard();
@@ -96,40 +95,40 @@ function hilo(a) {
         alert("Please place a bet to continue!");
         return;
     } else {
-    flipNoise.play();
-    //calculate winner
-    let win = false;
-    let oldCard = cards[count].cardValue;
-    let myBetAmount = parseInt(myB.value);
-    count++;
-    cardOutput.innerHTML += showCard();
-    let newCard = cards[count].cardValue;
-    if (a == 'high' && oldCard < newCard) {
-        win = true;
-    } else if (a == 'low' && oldCard > newCard) {
-        win = true;
+        flipNoise.play();
+        //calculate winner
+        let win = false;
+        let oldCard = cards[count].cardValue;
+        let myBetAmount = parseInt(myB.value);
+        count++;
+        cardOutput.innerHTML += showCard();
+        let newCard = cards[count].cardValue;
+        if (a == 'high' && oldCard < newCard) {
+            win = true;
+        } else if (a == 'low' && oldCard > newCard) {
+            win = true;
+        }
+        if (win) {
+            rules.innerHTML = "You were right! You made £" + myBetAmount;
+            myQuids = myQuids + myBetAmount;
+        } else {
+            rules.innerHTML = "You were wrong! You lost £" + myBetAmount;
+            myQuids = myQuids - myBetAmount;
+        }
+        let currentBet = parseInt(myB.value);
+        if (myQuids < 1) {
+            myB.value = 0;
+            endPlay();
+        }
+        if (currentBet > myQuids) {
+            myB.value = myQuids;
+        }
+        myB.max = myQuids;
+        myMoney.innerHTML = myQuids;
+        if (count > 3) {
+            endPlay();
+        }
     }
-    if (win) {
-        rules.innerHTML = "You were right! You made £" + myBetAmount;
-        myQuids = myQuids + myBetAmount;
-    } else {
-        rules.innerHTML = "You were wrong! You lost £" + myBetAmount;
-        myQuids = myQuids - myBetAmount;
-    }
-    let currentBet = parseInt(myB.value);
-    if (myQuids < 1) {
-        myB.value = 0;
-        endPlay();
-    }
-    if (currentBet > myQuids) {
-        myB.value = myQuids;
-    }
-    myB.max = myQuids;
-    myMoney.innerHTML = myQuids;
-    if (count > 3) {
-        endPlay();
-    }
-}
 }
 
 function endPlay() {
@@ -150,15 +149,15 @@ function displayPrize() {
         document.getElementById("playerResult2").style.display = "none";
         document.getElementById("playerResult3").style.display = "none";
         document.getElementById("playerResult4").style.display = "none";
-        document.getElementById("playerResult5").style.display = "none";   
-    } else if ((myQuids >= 8000)  && (myQuids <= 11999)) {
+        document.getElementById("playerResult5").style.display = "none";
+    } else if ((myQuids >= 8000) && (myQuids <= 11999)) {
         document.getElementById("playerResult4").style.display = "block";
         document.getElementById("playerResult3").style.display = "none";
         document.getElementById("playerResult1").style.display = "none";
         document.getElementById("playerResult2").style.display = "none";
         document.getElementById("playerResult0").style.display = "none";
-        document.getElementById("playerResult5").style.display = "none";   
-    } else if ((myQuids >= 5000) && (myQuids <=7999)) {
+        document.getElementById("playerResult5").style.display = "none";
+    } else if ((myQuids >= 5000) && (myQuids <= 7999)) {
         document.getElementById("playerResult3").style.display = "block";
         document.getElementById("playerResult1").style.display = "none";
         document.getElementById("playerResult2").style.display = "none";
@@ -170,21 +169,21 @@ function displayPrize() {
         document.getElementById("playerResult3").style.display = "none";
         document.getElementById("playerResult4").style.display = "none";
         document.getElementById("playerResult0").style.display = "none";
-        document.getElementById("playerResult5").style.display = "none";   
+        document.getElementById("playerResult5").style.display = "none";
     } else if ((myQuids >= 1) && (myQuids <= 999)) {
         document.getElementById("playerResult5").style.display = "block";
         document.getElementById("playerResult0").style.display = "none";
         document.getElementById("playerResult1").style.display = "none";
         document.getElementById("playerResult2").style.display = "none";
         document.getElementById("playerResult3").style.display = "none";
-        document.getElementById("playerResult4").style.display = "none";  
+        document.getElementById("playerResult4").style.display = "none";
     } else if (myQuids == 0) {
         document.getElementById("playerResult0").style.display = "block";
         document.getElementById("playerResult1").style.display = "none";
         document.getElementById("playerResult2").style.display = "none";
         document.getElementById("playerResult3").style.display = "none";
         document.getElementById("playerResult4").style.display = "none";
-        document.getElementById("playerResult5").style.display = "none";       
+        document.getElementById("playerResult5").style.display = "none";
     }
 }
 

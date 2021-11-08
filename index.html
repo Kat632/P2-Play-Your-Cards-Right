@@ -17,7 +17,7 @@
 </head>
 
 <body>
- <!-- Header -->
+  <!-- Header -->
   <header>
     <div id="title-container">
       <div id="title">
@@ -30,11 +30,13 @@
 
   <main>
     <!-- Sound effects obtained from https://www.zapsplat.com -->
-    <audio id="shuffleNoise" src="assets/sounds/zapsplat_leisure_playing_cards_shuffle_001_51044.mp3">Your browser does not support
+    <audio id="shuffleNoise" src="assets/sounds/zapsplat_leisure_playing_cards_shuffle_001_51044.mp3">Your browser does
+      not support
       the audio element.
     </audio>
     <audio id="flipNoise"
-      src="assets/sounds/zapsplat_leisure_trading_card_or_playing_card_single_turn_over_on_table_009_68337.mp3">Your brower does not support the audio element.</audio>
+      src="assets/sounds/zapsplat_leisure_trading_card_or_playing_card_single_turn_over_on_table_009_68337.mp3">Your
+      brower does not support the audio element.</audio>
     <button id="playerOff" type="button"><i class="fas fa-volume-mute"></i>
       Click to Toggle Sound
     </button>
@@ -49,7 +51,7 @@
 
     <!-- Game area -->
     <div id="play-area">
-      
+
       <!-- Rules -->
       <div id="rules">
         <h2>How to Play</h2>
@@ -119,7 +121,8 @@
       <div id="score">
         <div>
           <p id="placeYour">Total £<span id="quids">1000</span></p>
-          <label for="myBet"><p id="pYourB">Place your bet:</p></label>
+          <label for="myBet" id="myBet">Place your bet:</label>
+            <p id="pYourB"></p>
           <input type="number" id="myBet" value="0" min="1" max="100">
         </div>
       </div>
@@ -151,22 +154,22 @@
       <div id="row">
         <div id="contact">
           <p>This website was built by Katherine Biggs.</p>
-            <ul>
-              <li><a class="social-link" target="_blank" rel="noopener noreferrer"
+          <ul>
+            <li><a class="social-link" target="_blank" rel="noopener noreferrer"
                 href="mailto:katherine.biggs@mail.com?subject=Feedback">
                 <i class="fas fa-at fa-2x" aria-hidden="true"></i>
                 <span class="sr-only">Email</span>
               </a></li>
-              <li><a class="social-link" target="_blank" rel="noreferrer"
-                  href="https://www.linkedin.com/in/kat-biggs-a658059/">
-                  <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
-                  <span class="sr-only">LinkedIn</span>
-                </a></li>
-              <li><a class="social-link" target="_blank" rel="noreferrer" href="https://github.com/Kat632">
-                  <i class="fab fa-github fa-2x" aria-hidden="true"></i>
-                  <span class="sr-only">Github</span>
-                </a></li>
-            </ul>
+            <li><a class="social-link" target="_blank" rel="noreferrer"
+                href="https://www.linkedin.com/in/kat-biggs-a658059/">
+                <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+                <span class="sr-only">LinkedIn</span>
+              </a></li>
+            <li><a class="social-link" target="_blank" rel="noreferrer" href="https://github.com/Kat632">
+                <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                <span class="sr-only">Github</span>
+              </a></li>
+          </ul>
         </div>
       </div>
     </div>
