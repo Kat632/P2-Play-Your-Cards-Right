@@ -274,6 +274,8 @@ During Accessibility Testing, I discovered that the betting input requires a lab
 
 Also during Accessibility Testing, I noticed that the font colour on my sound button wasn't enough of a contrast to the background colour, so it has been changed to #fff8e7 which is the same as all of the other buttons.  Similarly, the social icons in the footer needed to be changed to #153243 to offer more of a contrast for visually impaired users.
 
+The JavaScript code has one unused variable, the function hilo.  The function is called from within the HTML, which I realise is not best practice.  I tried to fix it by adding eventListeners to the High and Low buttons to call the hilo function, but it completely broke my game.  At this point in time, 36 hours before my project deadline, I do not think it is a good idea to start pulling it apart for the sake of one variable.
+
 ## **Peer Code Review**
 
 At the suggestion of my mentor I submitted my code for Peer Code Review in the **Code Institute** Slack channel.  Please see the names of the reviewers below in [Acknowledgements](#acknowledgements).

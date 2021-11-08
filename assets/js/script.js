@@ -17,6 +17,10 @@ let myMoney = document.getElementById('quids');
 let myB = document.getElementById('myBet');
 let result = document.getElementById("playerResult");
 
+//Start Game
+let start = document.getElementById("btnstart");
+start.addEventListener('click', gameStart);
+
 //Hide html elements
 cardOutput.style.display = "none";
 
@@ -78,7 +82,7 @@ function gameStart() {
     document.getElementById('start').style.display = 'none';
     result.style.display = "none";
     document.getElementById('highLow').style.display = 'block';
-    document.getElementById('score').style.display = 'block';
+    scoreOutput.style.display = 'block';
     if (firstRun) {
         buildCards();
         firstRun = false;
