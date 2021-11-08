@@ -270,7 +270,7 @@ JavaScript code has been validated using [JSHint](https://jshint.com/)
 
 When validating the HTML code, an issue was revealed in that you cannot have a type="" in an audio tag.  This has now been removed.
 
-During Accessibility Testing, I discovered that the betting input requires a label tag.  Issue fixed by wrapping "Place Your Bet:" with label tags.
+During Accessibility Testing, I discovered that the betting input requires a label tag.  Issue fixed by wrapping "Place Your Bet:" with label tags, but then I had to restyle the text because you are not allowed to have a p element within a label element.
 
 Also during Accessibility Testing, I noticed that the font colour on my sound button wasn't enough of a contrast to the background colour, so it has been changed to #fff8e7 which is the same as all of the other buttons.  Similarly, the social icons in the footer needed to be changed to #153243 to offer more of a contrast for visually impaired users.
 
@@ -355,13 +355,13 @@ The results were:
   4. Added the ability to win prizes.
   5. Added the necessity to place a bet for the prizes.
 
-*   As a result, I feel like my understanding of JavaScript has greatly improved through through building up my project into a visually attractive and fun game to play.
+* As a result, I feel like my understanding of JavaScript has greatly improved through through building up my project into a visually attractive and fun game to play.
 
 *	In making the toggle sound on/off, this was the resource that finally helped me make it work [Stack Overflow](https://stackoverflow.com/questions/39041960/how-to-unmute-html5-video-with-a-muted-prop)
 
 *	[W3 Schools](https://www.w3schools.com/) and [MDN Web Docs](https://developer.mozilla.org/en-US/) as general reference guides throughout the project.
 
-*   [CSS Tricks](https://css-tricks.com/) for learning about transitions and animations.
+* [CSS Tricks](https://css-tricks.com/) for learning about transitions and animations.
 
 
 ** **

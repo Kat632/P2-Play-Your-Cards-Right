@@ -215,7 +215,7 @@ function buildCards() {
                 num: numbers[n],
                 cardValue: parseInt(n) + 2,
                 icon: suit
-            }
+            };
             cards.push(card);
         }
     }

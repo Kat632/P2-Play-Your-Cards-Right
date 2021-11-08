@@ -143,7 +143,7 @@ input[type=number] {
     box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.4);
 }
 
-#myBet {
+#my_Bet {
     font-family: 'Tienne', serif;
     color: #153243;
     font-size: 1.7em;
@@ -409,7 +409,7 @@ input[type=number] {
     }
 
     #placeYour,
-    #myBet {
+    #my_Bet {
         margin-top: 10px;
         text-align: center;
     }
@@ -479,7 +479,7 @@ input[type=number] {
     }
 
     #placeYour,
-    #myBet {
+    #my_Bet {
         margin-top: 10px;
         text-align: center;
     }
@@ -569,7 +569,7 @@ input[type=number] {
     }
 
     #placeYour,
-    #myBet {
+    #my_Bet {
         margin-top: 10px;
         text-align: center;
     }
@@ -656,7 +656,7 @@ input[type=number] {
     }
 
     #placeYour,
-    #myBet {
+    #my_Bet {
         margin-top: 10px;
         text-align: center;
     }
@@ -736,7 +736,7 @@ input[type=number] {
     }
 
     #placeYour,
-    #myBet {
+    #my_Bet {
         margin-top: 10px;
         margin-left: 10px;
         text-align: center;
@@ -821,7 +821,7 @@ input[type=number] {
     }
 
     #placeYour,
-    #myBet {
+    #my_Bet {
         margin-top: 10px;
         margin-left: 10px;
         text-align: center;
