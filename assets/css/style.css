@@ -286,6 +286,7 @@ input[type=number] {
 
 /* footer */
 #footer {
+    display: flex;
     background-color: #b4b8ab;
     border-radius: 25px;
     justify-content: center;
@@ -296,8 +297,6 @@ input[type=number] {
 }
 
 #container {
-    display: flex;
-    justify-content: center;
     margin-top: 5px;
 }
 
@@ -313,7 +312,12 @@ input[type=number] {
     text-align: center;
 }
 
-li {
+#contact ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+#contact ul li {
     display: inline-block;
 }
 
@@ -325,7 +329,7 @@ li {
     padding: 5px;
     border-radius: 50%;
     text-align: center;
-    color: #8e4a49;
+    color: #153243;
     background: #b4b8ab;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
@@ -408,16 +412,13 @@ li {
         letter-spacing: 2px;
     }
 
-    #contact {
-        letter-spacing: 25px;
-    }
-
     #contact p {
         text-align: center;
     }
 
     #contact ul {
         margin: 0 auto;
+        padding: 0px;
     }
 }
 
@@ -491,7 +492,8 @@ li {
     }
 
     #contact ul {
-        margin: 10px auto 10px auto
+        margin: 0 auto;
+        padding: 0px;
     }
 
     #playerResult0,
@@ -575,6 +577,11 @@ li {
         margin: 10px auto 10px auto;
     }
 
+    #contact ul {
+        margin: 0 auto;
+        padding: 0px;
+    }
+
     #playerResult0,
     #playerResult1,
     #playerResult2,
@@ -656,6 +663,11 @@ li {
         text-align: center;
     }
 
+    #contact ul {
+        margin: 0 auto;
+        padding: 0px;
+    }
+
     #playerResult0,
     #playerResult1,
     #playerResult2,
@@ -732,13 +744,13 @@ li {
         line-height: 0.9em;
     }
 
-    footer p {
+    #contact p {
         text-align: center;
-        padding-left: 10px;
     }
 
-    footer ul {
-        padding-left: 15px;
+    #contact ul {
+        margin: 0 auto;
+        padding: 0px;
     }
 
     #playerResult0,
@@ -817,13 +829,14 @@ li {
         line-height: 0.9em;
     }
 
-    footer p {
+    #contact p {
         text-align: center;
         padding-left: 10px;
     }
 
-    footer ul {
-        padding-left: 15px;
+    #contact ul {
+        margin: 0 auto;
+        padding: 0px;
     }
 
     #playerResult0,
