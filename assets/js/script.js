@@ -31,8 +31,6 @@ let audioOff = document.getElementById('playerOff');
 audioOn.addEventListener('click', toggleSound);
 audioOff.addEventListener('click', toggleSound);
 
-let isMuted = mySound.muted;
-let isMuted2 = mySound2.muted;
 mySound.muted = true;
 mySound2.muted = true;
 
@@ -67,7 +65,7 @@ function checkMe() {
 
 
 function gameStart() {
-    shuffleNoise.play();
+    mySound.play();
     myQuids = 1000;
     count = 0;
     myMoney.innerHTML = myQuids; //reset the money at the start of the game
@@ -95,7 +93,7 @@ function hilo(a) {
         alert("Please place a bet to continue!");
         return;
     } else {
-        flipNoise.play();
+        mySound2.play();
         //calculate winner
         let win = false;
         let oldCard = cards[count].cardValue;
@@ -207,9 +205,9 @@ function showCard() {
 //build the cards - loop through the card arrays
 function buildCards() {
     cards = [];
-    for (s in suits) {
+    for (let s in suits) {
         let suit = suits[s][0].toUpperCase();
-        for (n in numbers) {
+        for (let n in numbers) {
             let card = {
                 suit: suits[s],
                 num: numbers[n],
