@@ -20,7 +20,7 @@
 *   [Features](#features)
 *   [Testing](#testing)
 *   [Technologies Used](#technologies-used)
-*	[Resources](#resources)
+*	  [Resources](#resources)
 *   [Deployment](#deployment)
 *   [Credits](#credits)
 *   [Acknowledgements](#acknowledgements)
@@ -413,7 +413,7 @@ GitPod was used to write all code in this repository and pushed via Git to GitHu
  
 ### **Content**
 
-*   
+*   Please see [Resources](#resources) section.
 
 ### **Code Snippets**
 
